@@ -79,7 +79,7 @@ body {
 
 .icon-hover:hover {
   transform: scale(1.2) rotate(5deg);
-  color: black !important;
+  color: white !important;
 }
 
 .icon-hover {
