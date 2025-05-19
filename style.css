@@ -179,4 +179,136 @@ body {
   to {
     transform: rotate(360deg) scale(1.1);
   }
+} 
+
+/* Seção com fundo escuro e flores animadas */
+#projecoes {
+  position: relative;
+  background-color: #000;
+  overflow: hidden;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+#projecoes .overlay {
+  position: relative;
+  z-index: 2;
+}
+
+/* Reutiliza os estilos da classe .depoimento */
+#projecoes .depoimento {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  animation: fadeInUp 1s ease forwards;
+  height: 100%;
+}
+
+/* Animação de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Flores giratórias */
+.flor {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  opacity: 0.3;
+  animation: girar 60s linear infinite;
+  z-index: 0;
+}
+
+.flor1 {
+  top: -50px;
+  left: -50px;
+}
+
+.flor2 {
+  bottom: -50px;
+  right: -50px;
+}
+
+.flor3 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 90s;
+}
+
+/* Animação das flores */
+@keyframes girar {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(360deg) scale(1.1);
+  }
+}
+#movimentos {
+  position: relative;
+  background-color: #000;
+  overflow: hidden;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+.eixos-section {
+  background: linear-gradient(to bottom right, #0a0a0a, #000000);
+  color: white;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: transform 0.3s;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+}
+.section-svg-bg {
+  background-color: #111;
+}
+/* Opcional: suavizar os ícones no hover */
+.icon-hover:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.text-block {
+  background-color: #f8f9fa;
+  color: #111;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+
+/* Efeito hover no ícone */
+.icon-hover {
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: default;
+}
+.icon-hover:hover {
+  color: #ffc107; /* amarelo mais vibrante */
+  transform: scale(1.2);
 }
