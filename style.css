@@ -79,5 +79,104 @@ body {
 
 .icon-hover:hover {
   transform: scale(1.2) rotate(5deg);
-  color: #ffc107 !important;
+  color: black !important;
+}
+
+.icon-hover {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-hover:hover {
+  transform: scale(1.2) rotate(5deg);
+  filter: brightness(1.2);
+}
+
+.neon-border {
+  border: 2px solid #00FF99;
+  box-shadow: 0 0 15px #00FF99, 0 0 30px #00FF99;
+  transition: transform 0.3s ease;
+}
+
+.neon-border:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+
+#depoimentos {
+  position: relative;
+  background-color: #000;
+  overflow: hidden;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+}
+
+.depoimentos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.depoimento {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.flor {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  opacity: 0.3;
+  animation: girar 60s linear infinite;
+  z-index: 0;
+}
+
+.flor1 {
+  top: -50px;
+  left: -50px;
+}
+
+.flor2 {
+  bottom: -50px;
+  right: -50px;
+}
+
+.flor3 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 90s;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(360deg) scale(1.1);
+  }
 }
