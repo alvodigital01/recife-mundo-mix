@@ -1,0 +1,49 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero-imagen {
+    background: black no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: white;
+  }
+.hero-image {
+  background: url('imagens/bg3.png') no-repeat center center;
+  background-size: cover;
+  height: 1000px;
+  width: 100%;
+  position: relative;
+  color: white;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.titulo-hero {
+  font-family: 'Russo One', sans-serif;
+  font-size: 3rem;
+}
+
+.titulo {
+  font-family: 'Russo One', sans-serif;
+  color: #00FB33;
+}
+
+.texto {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.text-pink {
+  color: #000 !important;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
