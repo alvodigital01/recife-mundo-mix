@@ -47,3 +47,37 @@ body {
 .nav-link:hover {
   text-decoration: underline;
 }
+
+.icon-hover {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.icon-hover:hover {
+  transform: scale(1.2);
+  color: #000 !important;
+}
+
+.icon-hover {
+  transition: transform 0.3s ease;
+}
+.icon-hover:hover {
+  transform: scale(1.2);
+}
+
+.img-hover {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.img-hover:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon-hover {
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.icon-hover:hover {
+  transform: scale(1.2) rotate(5deg);
+  color: #ffc107 !important;
+}

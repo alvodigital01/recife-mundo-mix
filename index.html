@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
 
 </head>
 <body>
@@ -41,25 +45,167 @@
   <!-- HERO SECTION -->
   <section class="hero-image d-flex align-items-center justify-content-center text-center text-white">
   </section>
-  <section class="hero-imagen d-flex align-items-center justify-content-center text-center text-white">
-    <section class="container-texto"><h1 class="destaque">
-        Um festival que une arte, moda, música, gastronomia e inovação com o DNA criativo de Pernambuco. <br>
-        Prepare-se para viver uma experiência inédita e transformadora.
-      </h1></section>
-      
-</section>
-  <section class="container-texto"><h1 class="destaque">
-    Um festival que une arte, moda, música, gastronomia e inovação com o DNA criativo de Pernambuco. <br>
-    Prepare-se para viver uma experiência inédita e transformadora.
-  </h1></section>
+  <!-- Onda decorativa no topo -->
+<div style="margin-top: -50px; overflow: hidden;">
+  <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 80px; width: 100%;">
+    <path d="M0.00,49.98 C150.00,150.00 349.90,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" 
+          style="stroke: none; fill: #f8f9fa;"></path>
+  </svg>
+</div>
+
+<div class="container my-5">
+  <div class="row align-items-center">
+    
+    <!-- Texto à esquerda -->
+    <div class="col-md-6" data-aos="fade-right">
+      <h2 class="fw-bold">
+        <i class="bi bi-stars text-warning me-2 icon-hover"></i>
+        Um movimento. Um território. Um convite à criação coletiva.
+      </h2>
+      <p>
+        O Recife Mundo Mix nasce como um dos maiores festivais de cultura e economia criativa do Nordeste, ocupando o Recife Antigo com expressões artísticas, experiências sensoriais, conexões humanas e oportunidades para quem empreende com arte, propósito e identidade.
+      </p>
+      <p>
+        Não se trata apenas de um evento. É um espaço vivo de acesso, afeto e ativação de futuros possíveis — onde o popular encontra o autoral, o ancestral encontra o urbano, e o público se reconhece em cada esquina.
+      </p>
+    </div>
+
+    <!-- Imagem à direita -->
+    <div class="col-md-6 text-center" data-aos="fade-left">
+      <img src="imagens/bg3.png" alt="Imagem do Festival" class="img-fluid rounded shadow img-hover">
+    </div>
+
+  </div>
+</div>
+
   
   
-  <!-- SOBRE O FESTIVAL -->
+
   
 <!-- Conteúdo da Aba -->
+<section class="container my-5">
+  <h2 class="text-center fw-bold mb-4" data-aos="fade-up">Os Eixos da Experiência</h2>
+  <div class="row g-4">
+
+    <!-- Palco Mundo Mix -->
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+      <div class="card h-100 text-center border-0 shadow-sm p-3">
+        <div class="card-body">
+          <i class="bi bi-music-note-beamed display-4 text-primary icon-hover"></i>
+          <h5 class="card-title mt-3">Palco Mundo Mix</h5>
+          <p class="card-text">Programação musical com artistas autorais, locais e nacionais.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Passarela PE -->
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+      <div class="card h-100 text-center border-0 shadow-sm p-3">
+        <div class="card-body">
+          <i class="bi bi-bag-heart display-4 text-danger icon-hover"></i>
+          <h5 class="card-title mt-3">Passarela PE</h5>
+          <p class="card-text">Desfiles e ativações da moda independente, sustentável e periférica.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sabores Pernambucanos -->
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+      <div class="card h-100 text-center border-0 shadow-sm p-3">
+        <div class="card-body">
+          <i class="bi bi-cup-straw display-4 text-warning icon-hover"></i>
+          <h5 class="card-title mt-3">Sabores Pernambucanos</h5>
+          <p class="card-text">Festival gastronômico com comida de rua, chefs de raiz e cozinheiras populares.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Galeria Urbana -->
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+      <div class="card h-100 text-center border-0 shadow-sm p-3">
+        <div class="card-body">
+          <i class="bi bi-brush display-4 text-success icon-hover"></i>
+          <h5 class="card-title mt-3">Galeria Urbana</h5>
+          <p class="card-text">Grafite, lambe-lambe, instalações e arte pública em diálogo com o território.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bem Viver Mulher -->
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+      <div class="card h-100 text-center border-0 shadow-sm p-3">
+        <div class="card-body">
+          <i class="bi bi-flower1 display-4" style="color:#d63384;"></i>
+          <h5 class="card-title mt-3">Bem Viver Mulher</h5>
+          <p class="card-text">Espaço de cuidado, oficinas, empreendedorismo feminino e experiências coletivas.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lab Criativo -->
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+      <div class="card h-100 text-center border-0 shadow-sm p-3">
+        <div class="card-body">
+          <i class="bi bi-lightbulb display-4 text-info icon-hover"></i>
+          <h5 class="card-title mt-3">Lab Criativo</h5>
+          <p class="card-text">Painéis, debates, mentorias e atividades ligadas à inovação e cultura digital.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
 
     <!-- Outras abas podem seguir o mesmo padrão -->
+    <section class="container my-5">
+      <h2 class="text-center fw-bold mb-3" data-aos="fade-up">O Que Move o Festival</h2>
+      <p class="text-center mb-4 fs-5" data-aos="fade-up" data-aos-delay="100">
+        Um festival que transforma cidade em plataforma criativa.
+      </p>
+      
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <ul class="list-unstyled">
+    
+            <li class="d-flex align-items-start mb-4 shadow-sm p-3 rounded bg-white" data-aos="fade-right">
+              <i class="bi bi-bullseye text-danger fs-2 me-3 icon-hover"></i>
+              <div>
+                <h6 class="mb-1 fw-semibold">Valorização da identidade cultural pernambucana</h6>
+              </div>
+            </li>
+    
+            <li class="d-flex align-items-start mb-4 shadow-sm p-3 rounded bg-white" data-aos="fade-left" data-aos-delay="100">
+              <i class="bi bi-bullseye text-success fs-2 me-3 icon-hover"></i>
+              <div>
+                <h6 class="mb-1 fw-semibold">Geração de renda para artistas, empreendedores e coletivos</h6>
+              </div>
+            </li>
+    
+            <li class="d-flex align-items-start mb-4 shadow-sm p-3 rounded bg-white" data-aos="fade-right" data-aos-delay="200">
+              <i class="bi bi-bullseye text-primary fs-2 me-3 icon-hover"></i>
+              <div>
+                <h6 class="mb-1 fw-semibold">Democratização do acesso à arte e ao conhecimento</h6>
+              </div>
+            </li>
+    
+            <li class="d-flex align-items-start mb-4 shadow-sm p-3 rounded bg-white" data-aos="fade-left" data-aos-delay="300">
+              <i class="bi bi-bullseye text-warning fs-2 me-3 icon-hover"></i>
+              <div>
+                <h6 class="mb-1 fw-semibold">Fortalecimento da economia criativa como vetor de desenvolvimento</h6>
+              </div>
+            </li>
+    
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    
   <!-- Conteúdo da Aba -->
+
   
   <!-- EIXOS DA EXPERIÊNCIA -->
 
@@ -67,6 +213,16 @@
   
   <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
   <script src="js/script.js"></script>
 </body>
 </html>
