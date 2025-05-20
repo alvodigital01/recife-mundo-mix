@@ -2,6 +2,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+
 .hero-imagen {
     background: black no-repeat center center;
     background-size: cover;
@@ -11,7 +12,7 @@ body {
     color: white;
   }
 .hero-image {
-  background: url('imagens/bg3.png') no-repeat center center;
+  background: url('imagens/opcao1.png') no-repeat center center;
   background-size: cover;
   height: 1000px;
   width: 100%;
@@ -311,4 +312,27 @@ body {
 .icon-hover:hover {
   color: #ffc107; /* amarelo mais vibrante */
   transform: scale(1.2);
+}
+
+.eixos-section {
+  background: linear-gradient(to bottom right, #0a0a0a, #000000);
+  color: white;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: transform 0.3s;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
 }
