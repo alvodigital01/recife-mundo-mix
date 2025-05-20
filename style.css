@@ -34,6 +34,9 @@ body {
 .video {
   width: 50vh;
 }
+.logo {
+  width: 0px;
+}
 
 
 .titulo-hero {
