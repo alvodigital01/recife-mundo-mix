@@ -29,11 +29,10 @@ body {
 
 .hero-content {
   position: relative;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  border-radius: 1rem;
-  color: white;
+  
+}
+.video {
+  width: 50vh;
 }
 
 
