@@ -2,57 +2,54 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* Navbar padrão */
-  .custom-navbar {
+/* NAVBAR ROSA */
+.custom-navbar {
+  background-color: #ff2e94;
+  z-index: 1000;
+}
+
+/* ÍCONE HAMBÚRGUER 3 LINHAS BRANCAS */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* BOTÃO SEM BORDA, SEM FUNDO, POSICIONADO DIREITO */
+.custom-toggler {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 8px;
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  z-index: 1100;
+}
+
+/* NADA DE BORDA AO FOCAR */
+.custom-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* MENU MOBILE COM FUNDO ROSA */
+@media (max-width: 991.98px) {
+  .custom-collapse {
     background-color: #ff2e94;
-    transition: background-color 0.3s ease;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 56px;
+    position: relative;
     z-index: 1000;
   }
+}
 
-  /* Ícone hamburguer rosa */
-  .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,46,148, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+/* NÃO DEIXA CRESCER NO DESKTOP */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    flex-grow: 0 !important;
   }
+}
 
-  /* Botão com fundo rosa claro */
-  .custom-toggler {
-    background-color: rgba(255, 46, 148, 0.15);
-    padding: 8px;
-    border-radius: 8px;
-    border: none;
-    z-index: 1050;
-  }
-
-  .custom-toggler:focus {
-    outline: none;
-    box-shadow: none;
-  }
-
-  /* Corrige o fundo e posição do menu mobile */
-  @media (max-width: 991.98px) {
-    .custom-navbar {
-      background-color: transparent !important;
-    }
-
-    .custom-navbar.show-background {
-      background-color: #ff2e94 !important;
-    }
-
-    .custom-collapse {
-      background-color: #ff2e94;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      margin-top: 56px; /* empurra abaixo da navbar */
-      border-top: 1px solid rgba(255,255,255,0.2);
-    }
-  }
-
-  @media (min-width: 992px) {
-    .navbar-collapse {
-      flex-grow: 0 !important;
-    }
-  }
-  
 .hero-image {
   background: url('imagens/opcao1.png') no-repeat center center;
   background-size: cover;
