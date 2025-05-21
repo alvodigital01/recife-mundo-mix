@@ -519,3 +519,92 @@ body {
   bottom: -60px;
   right: 10%;
 }
+
+
+.contador-section {
+  background-color: #000;
+  color: white;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.contador-section::before,
+.contador-section::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff2e94aa 0%, transparent 70%);
+  filter: blur(80px);
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.contador-section::before {
+  width: 300px;
+  height: 300px;
+  top: -100px;
+  left: -100px;
+}
+
+.contador-section::after {
+  width: 400px;
+  height: 400px;
+  bottom: -100px;
+  right: -100px;
+}
+
+.contador-section .overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.contador-glass {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.tempo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+}
+
+.tempo span {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.tempo p {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  color: #ff2e94;
+}
+
+.separador {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #ff2e94;
+  padding: 0 10px;
+  line-height: 1;
+}
+
+/* Animação das bolhas */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.25;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.35;
+  }
+}
+
