@@ -71,12 +71,13 @@ body {
 /* ------------------------------------
   HERO
 ------------------------------------- */
+/* HERO com imagem de fundo */
 .hero-image {
+  position: relative;
+  width: 100%;
+  height: 100vh;
   background: url('imagens/opcao1.png') no-repeat center center;
   background-size: cover;
-  height: 100vh;
-  width: 100%;
-  position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -84,30 +85,68 @@ body {
   text-align: center;
 }
 
+/* Vídeo sobre a imagem com opacidade */
 .hero-video {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  z-index: 0;
-  opacity: 0.6;
+  z-index: 1;
+  opacity: 0.2; /* Mais visível */
   pointer-events: none;
 }
 
+/* Conteúdo acima de tudo */
 .hero-content {
   position: relative;
   z-index: 2;
 }
 
-.video {
-  width: 50vh;
+/* Logo maior e responsiva */
+.hero-logo {
+  width: 60vw;
+  max-width: px;
+  height: auto;
 }
 
-.logo {
-  width: 0px;
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero-logo {
+    width: 100vw;
+    max-width: 780px;
+  }
 }
+
+/* Nova animação: zoom suave + fade + flutuação */
+.animated-logo {
+  animation: logoIntro 2s ease-out forwards, logoFloat 6s ease-in-out infinite;
+  opacity: 0;
+}
+
+/* Fade in + Zoom inicial */
+@keyframes logoIntro {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Flutuação contínua */
+@keyframes logoFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
 
 /* ------------------------------------
   HOVERS E EFEITOS
