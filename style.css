@@ -1,19 +1,36 @@
+/* ------------------------------------
+  GERAIS
+------------------------------------- */
 body {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* NAVBAR ROSA */
+.titulo-hero, .titulo {
+  font-family: 'Russo One', sans-serif;
+}
+
+.titulo {
+  color: #00FB33;
+  text-shadow: 0 0 5px #00FB33, 0 0 15px #00FB33;
+}
+
+.texto {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.text-pink {
+  color: #000 !important;
+}
+
+/* ------------------------------------
+  NAVBAR
+------------------------------------- */
 .custom-navbar {
   background-color: #ff2e94;
-  z-index: 1000;
+  z-index: 100;
 }
 
-/* ÍCONE HAMBÚRGUER 3 LINHAS BRANCAS */
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-/* BOTÃO SEM BORDA, SEM FUNDO, POSICIONADO DIREITO */
 .custom-toggler {
   background: none !important;
   border: none !important;
@@ -22,34 +39,38 @@ body {
   position: absolute;
   top: 0.75rem;
   right: 1rem;
-  z-index: 1100;
+  z-index: 110;
 }
 
-/* NADA DE BORDA AO FOCAR */
 .custom-toggler:focus {
   outline: none !important;
   box-shadow: none !important;
 }
 
-/* MENU MOBILE COM FUNDO ROSA */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Mobile menu */
 @media (max-width: 991.98px) {
   .custom-collapse {
     background-color: #ff2e94;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
     margin-top: 56px;
-    position: relative;
-    z-index: 1000;
+    z-index: 100;
   }
 }
 
-/* NÃO DEIXA CRESCER NO DESKTOP */
+/* Desktop menu */
 @media (min-width: 992px) {
   .navbar-collapse {
     flex-grow: 0 !important;
   }
 }
 
+/* ------------------------------------
+  HERO
+------------------------------------- */
 .hero-image {
   background: url('imagens/opcao1.png') no-repeat center center;
   background-size: cover;
@@ -71,57 +92,40 @@ body {
   width: 100%;
   object-fit: cover;
   z-index: 0;
-  opacity: 0.6; /* Ajuste a transparência do vídeo */
+  opacity: 0.6;
+  pointer-events: none;
 }
 
 .hero-content {
   position: relative;
-  
+  z-index: 2;
 }
+
 .video {
   width: 50vh;
 }
+
 .logo {
   width: 0px;
 }
 
-
-.titulo-hero {
-  font-family: 'Russo One', sans-serif;
-  font-size: 3rem;
-}
-
-.titulo {
-  font-family: 'Russo One', sans-serif;
-  color: #00FB33;
-}
-
-.texto {
-  font-size: 1.1rem;
-  color: #333;
-}
-
-.text-pink {
-  color: #000 !important;
-}
-
+/* ------------------------------------
+  HOVERS E EFEITOS
+------------------------------------- */
 .nav-link:hover {
   text-decoration: underline;
 }
 
 .icon-hover {
+  display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
-}
-.icon-hover:hover {
-  transform: scale(1.2);
-  color: #000 !important;
+  cursor: default;
 }
 
-.icon-hover {
-  transition: transform 0.3s ease;
-}
 .icon-hover:hover {
-  transform: scale(1.2);
+  transform: scale(1.2) rotate(5deg);
+  color: #ffffff !important;
+  filter: brightness(1.2);
 }
 
 .img-hover {
@@ -131,25 +135,6 @@ body {
 .img-hover:hover {
   transform: scale(1.03);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.icon-hover {
-  transition: transform 0.3s ease, color 0.3s ease;
-  display: inline-block;
-}
-
-.icon-hover:hover {
-  transform: scale(1.2) rotate(5deg);
-  color: white !important;
-}
-
-.icon-hover {
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.icon-hover:hover {
-  transform: scale(1.2) rotate(5deg);
-  filter: brightness(1.2);
 }
 
 .neon-border {
@@ -162,7 +147,50 @@ body {
   transform: scale(1.05) rotate(1deg);
 }
 
-#depoimentos {
+/* ------------------------------------
+  FLORES ANIMADAS (USADAS EM VÁRIAS SEÇÕES)
+------------------------------------- */
+.flor {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  opacity: 0.3;
+  animation: girar 120s linear infinite;
+  z-index: 0;
+}
+
+.flor1 {
+  top: -50px;
+  left: -50px;
+}
+
+.flor2 {
+  bottom: -50px;
+  right: -50px;
+}
+
+.flor3 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 90s;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(360deg) scale(1.1);
+  }
+}
+
+/* ------------------------------------
+  SEÇÕES: DEPOIMENTOS, PROJEÇÕES, MOVIMENTOS
+------------------------------------- */
+#depoimentos,
+#projecoes,
+#movimentos {
   position: relative;
   background-color: #000;
   overflow: hidden;
@@ -193,7 +221,9 @@ body {
   border-radius: 16px;
   padding: 20px;
   backdrop-filter: blur(10px);
+  color: #fff;
   animation: fadeInUp 1s ease forwards;
+  height: 100%;
 }
 
 @keyframes fadeInUp {
@@ -207,43 +237,174 @@ body {
   }
 }
 
-.flor {
+/* ------------------------------------
+  SEÇÃO EIXOS
+------------------------------------- */
+.eixos-section {
+  background-color: #000; /* Fundo preto sólido */
+  color: white;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: transform 0.3s;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-hover {
+  transition: transform 0.3s ease;
+}
+
+.icon-hover:hover {
+  transform: scale(1.1);
+}
+
+.eixos-section {
+  background-color: #000; /* fundo preto sólido */
+  color: white;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Bolinhas flutuantes de fundo */
+.eixos-section::before,
+.eixos-section::after {
+  content: '';
   position: absolute;
-  width: 300px;
-  height: 300px;
-  opacity: 0.3;
-  animation: girar 60s linear infinite;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff2e94aa 0%, transparent 70%);
+  filter: blur(80px);
+  opacity: 0.2;
   z-index: 0;
 }
 
-.flor1 {
-  top: -50px;
-  left: -50px;
+.eixos-section::before {
+  width: 300px;
+  height: 300px;
+  top: -100px;
+  left: -100px;
 }
+
+.eixos-section::after {
+  width: 400px;
+  height: 400px;
+  bottom: -100px;
+  right: -100px;
+}
+
+/* Garantir que conteúdo fique acima das bolinhas */
+.eixos-section .overlay {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* ------------------------------------
+  SEÇÃOPRA QUEM É
+------------------------------------- */
+.para-quem-section {
+  background-color: #000000;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  
+  transition: transform 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-8px);
+}
+
+.icon-hover {
+  transition: transform 0.3s ease;
+}
+
+.icon-hover:hover {
+  transform: scale(1.1);
+}
+
+
+
 
 .flor2 {
-  bottom: -50px;
-  right: -50px;
+  bottom: 10%;
+  right: 15%;
 }
 
-.flor3 {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation-duration: 90s;
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
 }
 
-@keyframes girar {
-  from {
-    transform: rotate(0deg) scale(1);
-  }
-  to {
-    transform: rotate(360deg) scale(1.1);
-  }
-} 
+/* ------------------------------------
+  SEÇÃO footer
+------------------------------------- */
 
-/* Seção com fundo escuro e flores animadas */
-#projecoes {
+@keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+    
+    @keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @media (max-width: 600px) {
+      #quer-participar .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+
+
+
+
+    #projecoes {
   position: relative;
   background-color: #000;
   overflow: hidden;
@@ -258,67 +419,50 @@ body {
   z-index: 2;
 }
 
-/* Reutiliza os estilos da classe .depoimento */
-#projecoes .depoimento {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  padding: 20px;
-  backdrop-filter: blur(10px);
-  color: #fff;
-  animation: fadeInUp 1s ease forwards;
-  height: 100%;
-}
-
-/* Animação de entrada */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Flores giratórias */
-.flor {
+/* Bolhas decorativas */
+#projecoes .bubble {
   position: absolute;
-  width: 300px;
-  height: 300px;
-  opacity: 0.3;
-  animation: girar 60s linear infinite;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.2;
   z-index: 0;
 }
 
-.flor1 {
-  top: -50px;
-  left: -50px;
+#projecoes .bubble.pink {
+  background: #ff2e94;
+  width: 300px;
+  height: 300px;
+  top: -100px;
+  left: -120px;
 }
 
-.flor2 {
-  bottom: -50px;
-  right: -50px;
+#projecoes .bubble.blue {
+  background: #00ffff;
+  width: 250px;
+  height: 250px;
+  top: 60%;
+  left: 10%;
 }
 
-.flor3 {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation-duration: 90s;
+#projecoes .bubble.yellow {
+  background: #ffff00;
+  width: 220px;
+  height: 220px;
+  top: 20%;
+  right: -100px;
 }
 
-/* Animação das flores */
-@keyframes girar {
-  from {
-    transform: rotate(0deg) scale(1);
-  }
-  to {
-    transform: rotate(360deg) scale(1.1);
-  }
+#projecoes .bubble.purple {
+  background: #b832fa;
+  width: 200px;
+  height: 200px;
+  bottom: -60px;
+  right: 10%;
 }
-#movimentos {
+
+
+
+#depoimentos {
   position: relative;
   background-color: #000;
   overflow: hidden;
@@ -327,72 +471,49 @@ body {
   text-align: center;
   z-index: 1;
 }
-.eixos-section {
-  background: linear-gradient(to bottom right, #0a0a0a, #000000);
-  color: white;
-  padding: 80px 20px;
+
+#depoimentos .overlay {
   position: relative;
-  overflow: hidden;
-  z-index: 1;
+  z-index: 2;
 }
 
-.glass-card {
-  background: rgba(255, 255, 255, 0.07);
-  border-radius: 16px;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: white;
-  transition: transform 0.3s;
+/* Bolhas decorativas */
+#depoimentos .bubble {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.2;
+  z-index: 0;
 }
 
-.glass-card:hover {
-  transform: translateY(-5px);
-}
-.section-svg-bg {
-  background-color: #111;
-}
-/* Opcional: suavizar os ícones no hover */
-.icon-hover:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
-}
-.text-block {
-  background-color: #f8f9fa;
-  color: #111;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+#depoimentos .bubble.pink {
+  background: #ff2e94;
+  width: 300px;
+  height: 300px;
+  top: -80px;
+  left: -100px;
 }
 
-/* Efeito hover no ícone */
-.icon-hover {
-  transition: transform 0.3s ease, color 0.3s ease;
-  cursor: default;
-}
-.icon-hover:hover {
-  color: #ffc107; /* amarelo mais vibrante */
-  transform: scale(1.2);
+#depoimentos .bubble.blue {
+  background: #00ffff;
+  width: 250px;
+  height: 250px;
+  top: 60%;
+  left: 15%;
 }
 
-.eixos-section {
-  background: linear-gradient(to bottom right, #0a0a0a, #000000);
-  color: white;
-  padding: 80px 20px;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
+#depoimentos .bubble.yellow {
+  background: #ffff00;
+  width: 220px;
+  height: 220px;
+  top: 25%;
+  right: -100px;
 }
 
-.glass-card {
-  background: rgba(255, 255, 255, 0.07);
-  border-radius: 16px;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: white;
-  transition: transform 0.3s;
-}
-
-.glass-card:hover {
-  transform: translateY(-5px);
+#depoimentos .bubble.purple {
+  background: #b832fa;
+  width: 200px;
+  height: 200px;
+  bottom: -60px;
+  right: 10%;
 }

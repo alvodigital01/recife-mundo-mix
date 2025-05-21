@@ -58,38 +58,32 @@
     Seu navegador não suporta vídeo HTML5.
   </video>
   <div class="hero-content">
-    <img class="video" src="imagens/marca opcao 2 - sem estrelas (1).png" alt="">
+    <img class="hero-logo" src="imagens/marca opcao 2 - sem estrelas (1).png" alt="Logo do Festival">
+  </div>
 </section>
 
-  <!-- Onda decorativa no topo -->
- <section id="intro" class="eixos-section position-relative overflow-hidden">
-  <!-- Fundo animado SVG -->
-  <svg class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 0; pointer-events: none;" preserveAspectRatio="none" viewBox="0 0 1000 1000">
-    <defs>
-      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" style="stop-color:#0a0a0a;stop-opacity:1" />
-        <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
-      </linearGradient>
-    </defs>
-    <path fill="url(#grad1)">
-      <animate attributeName="d" dur="20s" repeatCount="indefinite"
-        values="M0,0 C500,300 500,300 1000,0 L1000,1000 L0,1000 Z;
-                M0,0 C300,500 700,500 1000,0 L1000,1000 L0,1000 Z;
-                M0,0 C500,300 500,300 1000,0 L1000,1000 L0,1000 Z" />
-    </path>
-  </svg>
+  <section id="intro" class="eixos-section position-relative overflow-hidden" style="background-color: #000;">
+
+  <!-- Bolhas coloridas decorativas -->
+  <div style="position: absolute; width: 250px; height: 250px; border-radius: 50%; filter: blur(100px); background: #ff0077; opacity: 0.25; top: 50px; left: -50px; animation: pulse 6s infinite ease-in-out;"></div>
+  <div style="position: absolute; width: 200px; height: 200px; border-radius: 50%; filter: blur(100px); background: #00FB33; opacity: 0.25; top: 200px; right: 10%; animation: pulse 7s infinite ease-in-out 1s;"></div>
+  <div style="position: absolute; width: 180px; height: 180px; border-radius: 50%; filter: blur(100px); background: #FF6B23; opacity: 0.2; bottom: 60px; left: 20%; animation: pulse 8s infinite ease-in-out 2s;"></div>
+  <div style="position: absolute; width: 220px; height: 220px; border-radius: 50%; filter: blur(100px); background: #0056FF; opacity: 0.2; bottom: 0; right: 0; animation: pulse 6s infinite ease-in-out 3s;"></div>
+  <div style="position: absolute; width: 160px; height: 160px; border-radius: 50%; filter: blur(100px); background: #FF2E94; opacity: 0.2; top: 30%; left: 40%; animation: pulse 9s infinite ease-in-out 4s;"></div>
 
   <!-- Conteúdo da seção -->
-    <h2 class="text-center fw-bold mb-4" data-aos="fade-up" style="color: #ff2e94;">
-              3 DIAS DE CULTURA VIVA / JULHO 2025 / RECIFE ANTIGO
-            </h2>
+  <h2 class="text-center fw-bold mb-4" data-aos="fade-up" style="color: #ff2e94; position: relative; z-index: 1;">
+    3 DIAS DE CULTURA VIVA <br>
+    <strong style="color:#00FB33;">JULHO 2025</strong> - RECIFE ANTIGO
+  </h2>
+
   <div class="overlay py-5 position-relative" style="z-index: 1;">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-10" data-aos="fade-up">
           <div class="glass-card p-4">
             <h2 class="text-center fw-bold mb-4">
-              UM MOVIMENTO. UM TERRITÓRIO. <br> UM CONVITE Á CRIAÇÃO COLETIVA.
+              UM MOVIMENTO. UM TERRITÓRIO. <br> UM CONVITE À CRIAÇÃO COLETIVA.
             </h2>
             <p class="lead text-center">
               O Recife Mundo Mix nasce como um dos maiores festivais de cultura e economia criativa do Nordeste, 
@@ -97,8 +91,8 @@
               para quem empreende com arte, propósito e identidade.
             </p>
             <p class="lead text-center">
-              Não se trata apenas de um evento. É um espaço vivo de acesso, afeto e ativação de futuros possíveis — onde o popular 
-              encontra o autoral, o ancestral encontra o urbano, e o público se reconhece em cada esquina.
+              Não se trata apenas de um evento. É um espaço vivo de acesso, afeto e ativação de futuros possíveis, onde o popular 
+              encontra o autoral, o ancestral encontra o urbano, e o público se <br>reconhece em cada esquina.
             </p>
           </div>
         </div>
@@ -106,16 +100,25 @@
     </div>
   </div>
 </section>
-
   
 
   
   
-<!-- Conteúdo da Aba -->
+<!-- SEÇÃO: Eixos de Experiência -->
 <section id="eixos" class="eixos-section">
+
+  <!-- Bolhas decorativas -->
+  <div class="bubble pink"></div>
+  <div class="bubble blue"></div>
+  <div class="bubble yellow"></div>
+  <div class="bubble purple"></div>
+  
   <div class="overlay">
     <h2 class="text-center fw-bold mb-4" data-aos="fade-up" style="color: #ff2e94;">OS EIXOS DE EXPERIÊNCIA</h2>
-    <h4 class="text-center fw-bold mb-4" data-aos="fade-up"> O Recife Mundo Mix é dividido em 5 grandes núcleos temáticos:</h4>
+    <h4 class="text-center fw-bold mb-4" data-aos="fade-up">
+      O Recife Mundo Mix é dividido em 5 grandes núcleos temáticos:
+    </h4>
+
     <div class="container">
       <div class="row g-4">
 
@@ -140,7 +143,7 @@
         <!-- Sabores Pernambucanos -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
           <div class="glass-card h-100 text-center p-4">
-            <i class="bi bi-cup-straw display-4 text-warning icon-hover"></i>
+            <i class="bi bi-cup-hot display-4 text-warning icon-hover"></i>
             <h5 class="mt-3 fw-bold">Sabores Pernambucanos</h5>
             <p>Festival gastronômico com comida de rua, chefs de raiz e cozinheiras populares.</p>
           </div>
@@ -176,6 +179,8 @@
       </div>
     </div>
   </div>
+</section>
+
 
   <!-- Flores SVG -->
   <svg class="flor flor1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -193,51 +198,60 @@
 
 
     <!-- Outras abas podem seguir o mesmo padrão -->
-    <section id="movimentos" class="movimentos-section">
-      <div class="overlay">
-        <h2 class="text-center fw-bold mb-3" data-aos="fade-up" style="color: #ff2e94;">O QUE MOVE O FESTIVAL</h2>
-        <p class="text-center mb-4 fs-5" data-aos="fade-up" data-aos-delay="100">
-          Um festival que transforma cidade em plataforma criativa.
-        </p>
-    
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-10">
-              <ul class="list-unstyled">
-    
-                <li class="d-flex align-items-start mb-4 depoimento" data-aos="fade-right">
-                  <i class="bi bi-bullseye text-danger fs-2 me-3 icon-hover"></i>
-                  <div>
-                    <h6 class="mb-1 fw-semibold">Valorização da identidade cultural pernambucana</h6>
-                  </div>
-                </li>
-    
-                <li class="d-flex align-items-start mb-4 depoimento" data-aos="fade-left" data-aos-delay="100">
-                  <i class="bi bi-bullseye text-success fs-2 me-3 icon-hover"></i>
-                  <div>
-                    <h6 class="mb-1 fw-semibold">Geração de renda para artistas, empreendedores e coletivos</h6>
-                  </div>
-                </li>
-    
-                <li class="d-flex align-items-start mb-4 depoimento" data-aos="fade-right" data-aos-delay="200">
-                  <i class="bi bi-bullseye text-primary fs-2 me-3 icon-hover"></i>
-                  <div>
-                    <h6 class="mb-1 fw-semibold">Democratização do acesso à arte e ao conhecimento</h6>
-                  </div>
-                </li>
-    
-                <li class="d-flex align-items-start mb-4 depoimento" data-aos="fade-left" data-aos-delay="300">
-                  <i class="bi bi-bullseye text-warning fs-2 me-3 icon-hover"></i>
-                  <div>
-                    <h6 class="mb-1 fw-semibold">Fortalecimento da economia criativa como vetor de desenvolvimento</h6>
-                  </div>
-                </li>
-    
-              </ul>
-            </div>
-          </div>
+<section id="movimentos" class="movimentos-section">
+
+  <!-- Bolhas coloridas -->
+  <div class="bubble pink"></div>
+  <div class="bubble blue"></div>
+  <div class="bubble yellow"></div>
+  <div class="bubble purple"></div>
+
+  <div class="overlay">
+    <h2 class="text-center fw-bold mb-3" data-aos="fade-up" style="color: #ff2e94;" >O QUE MOVE O FESTIVAL</h2>
+    <p class="text-center mb-4 fs-5" data-aos="fade-up" data-aos-delay="100">
+      Um festival que transforma cidade em plataforma criativa.
+    </p>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <ul class="list-unstyled">
+
+            <li class="d-flex align-items-start mb-4 depoimento" data-aos="fade-right">
+              <i class="bi bi-bullseye text-danger fs-2 me-3 icon-hover"></i>
+              <div>
+                <h6 class="mb-1 fw-semibold">Valorização da identidade cultural pernambucana</h6>
+              </div>
+            </li>
+
+            <li class="d-flex align-items-start mb-4 depoimento" data-aos="fade-left" data-aos-delay="100">
+              <i class="bi bi-bullseye text-success fs-2 me-3 icon-hover"></i>
+              <div>
+                <h6 class="mb-1 fw-semibold">Geração de renda para artistas, empreendedores e coletivos</h6>
+              </div>
+            </li>
+
+            <li class="d-flex align-items-start mb-4 depoimento" data-aos="fade-right" data-aos-delay="200">
+              <i class="bi bi-bullseye text-primary fs-2 me-3 icon-hover"></i>
+              <div>
+                <h6 class="mb-1 fw-semibold">Democratização do acesso à arte e ao conhecimento</h6>
+              </div>
+            </li>
+
+            <li class="d-flex align-items-start mb-4 depoimento" data-aos="fade-left" data-aos-delay="300">
+              <i class="bi bi-bullseye text-warning fs-2 me-3 icon-hover"></i>
+              <div>
+                <h6 class="mb-1 fw-semibold">Fortalecimento da economia criativa como vetor de desenvolvimento</h6>
+              </div>
+            </li>
+
+          </ul>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
     
       <!-- SVGs Florais -->
       <svg class="flor flor1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -254,72 +268,79 @@
     
     
   <!-- Conteúdo da Aba -->
-  <section id="projecoes" class="depoimentos-section">
-    <div class="overlay">
-      <div class="container">
-        <h2 class="fw-bold mb-4" data-aos="fade-up" data-aos-delay="100" style="color: #ff2e94;">
-           PROJEÇÕES PARA 2025
-        </h2>
-  
-        <div class="row text-center g-4">
-  
-          <!-- Público -->
-          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="depoimento">
-              <i class="bi bi-people-fill display-4 text-primary mb-2 icon-hover"></i>
-              <h3 class="fw-bold counter" data-target="100000">+0</h3>
-              <p>pessoas circulando pelo Recife Antigo</p>
-            </div>
+<section id="projecoes" class="depoimentos-section">
+  <!-- Bolhas decorativas -->
+  <div class="bubble pink"></div>
+  <div class="bubble blue"></div>
+  <div class="bubble yellow"></div>
+  <div class="bubble purple"></div>
+
+  <div class="overlay">
+    <div class="container">
+      <h2 class="fw-bold mb-4" data-aos="fade-up" data-aos-delay="100" style="color: #ff2e94;">
+        PROJEÇÕES PARA 2025
+      </h2>
+
+      <div class="row text-center g-4">
+        <!-- Público -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="depoimento">
+            <i class="bi bi-people-fill display-4 text-primary mb-2 icon-hover"></i>
+            <h3 class="fw-bold counter" data-target="100000">+0</h3>
+            <p>pessoas circulando pelo Recife Antigo.</p>
           </div>
-  
-          <!-- Marcas -->
-          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="depoimento">
-              <i class="bi bi-shop-window display-4 text-success mb-2 icon-hover"></i>
-              <h3 class="fw-bold counter" data-target="300">+0</h3>
-              <p>marcas e empreendedores criativos envolvidos</p>
-            </div>
+        </div>
+
+        <!-- Marcas -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="depoimento">
+            <i class="bi bi-shop-window display-4 text-success mb-2 icon-hover"></i>
+            <h3 class="fw-bold counter" data-target="300">+0</h3>
+            <p>marcas e empreendedores criativos envolvidos.</p>
           </div>
-  
-          <!-- Apresentações -->
-          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="depoimento">
-              <i class="bi bi-mic-fill display-4 text-danger mb-2 icon-hover"></i>
-              <h3 class="fw-bold counter" data-target="150">+0</h3>
-              <p>apresentações e experiências artísticas</p>
-            </div>
+        </div>
+
+        <!-- Apresentações -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="depoimento">
+            <i class="bi bi-mic-fill display-4 text-danger mb-2 icon-hover"></i>
+            <h3 class="fw-bold counter" data-target="150">+0</h3>
+            <p>apresentações e experiências artísticas.</p>
           </div>
-  
-          <!-- Oportunidades -->
-          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
-            <div class="depoimento">
-              <i class="bi bi-lightbulb-fill display-4 text-warning mb-2 icon-hover"></i>
-              <h3 class="fw-bold counter" data-target="700">+0</h3>
-              <p>oportunidades formativas e interativas</p>
-            </div>
+        </div>
+
+        <!-- Oportunidades -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="depoimento">
+            <i class="bi bi-lightbulb-fill display-4 text-warning mb-2 icon-hover"></i>
+            <h3 class="fw-bold counter" data-target="700">+0</h3>
+            <p>oportunidades formativas e interativas.</p>
           </div>
-  
-          <!-- Imprensa -->
-          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
-            <div class="depoimento">
-              <i class="bi bi-megaphone-fill display-4 text-info mb-2 icon-hover"></i>
-              <h3 class="fw-bold counter" data-target="100">+0</h3>
-              <p>profissionais da imprensa e mídia cobrindo o evento</p>
-            </div>
+        </div>
+
+        <!-- Imprensa -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
+          <div class="depoimento">
+            <i class="bi bi-megaphone-fill display-4 text-info mb-2 icon-hover"></i>
+            <h3 class="fw-bold counter" data-target="100">+0</h3>
+            <p>profissionais da imprensa e mídia cobrindo o evento.</p>
           </div>
-  
-          <!-- Impacto -->
-          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="600">
-            <div class="depoimento">
-              <i class="bi bi-globe-americas display-4 text-secondary mb-2 icon-hover"></i>
-              <h4 class="fw-bold">Impacto positivo</h4>
-              <p>nos setores de turismo, serviços, gastronomia, hotelaria e transporte</p>
-            </div>
+        </div>
+
+        <!-- Impacto -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="600">
+          <div class="depoimento">
+            <i class="bi bi-globe-americas display-4 text-secondary mb-2 icon-hover"></i>
+            <h4 class="fw-bold">Impacto positivo</h4>
+            <p>nos setores de turismo, serviços, gastronomia, hotelaria e transporte.</p>
           </div>
-  
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+
   
     <!-- SVGs Florais -->
     <svg class="flor flor1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -336,24 +357,32 @@
 
   
   <!-- EIXOS DA EXPERIÊNCIA -->
-  <section id="depoimentos" class="depoimentos-section">
-    <div class="overlay">
-      <h2 class="text-center fw-bold mb-4" data-aos="fade-up" style="color: #ff2e94;">O QUE JÁ SE FALA DO RECIFE MUNDO MIX</h2>
-      <div class="depoimentos">
-        <div class="depoimento">
-          <span class="icon">🗣️</span>
-          <p>“Um novo marco para o calendário cultural do estado.”</p>
-        </div>
-        <div class="depoimento">
-          <span class="icon">🗣️</span>
-          <p>“O tipo de evento que movimenta a cidade inteira e dá visibilidade ao que é feito aqui.”</p>
-        </div>
-        <div class="depoimento">
-          <span class="icon">🗣️</span>
-          <p>“A gente precisava de um festival com essa cara. É Pernambuco com potência máxima.”</p>
-        </div>
+<section id="depoimentos" class="depoimentos-section">
+  <!-- Bolhas decorativas -->
+  <div class="bubble pink"></div>
+  <div class="bubble blue"></div>
+  <div class="bubble yellow"></div>
+  <div class="bubble purple"></div>
+
+  <div class="overlay">
+    <h2 class="text-center fw-bold mb-4" data-aos="fade-up" style="color: #ff2e94;">O QUE JÁ SE FALA DO RECIFE MUNDO MIX</h2>
+    <div class="depoimentos">
+      <div class="depoimento">
+        <span class="icon">🗣️</span>
+        <p>“Um novo marco para o calendário cultural do estado.”</p>
+      </div>
+      <div class="depoimento">
+        <span class="icon">🗣️</span>
+        <p>“O tipo de evento que movimenta a cidade inteira e dá visibilidade ao que é feito aqui.”</p>
+      </div>
+      <div class="depoimento">
+        <span class="icon">🗣️</span>
+        <p>“A gente precisava de um festival com essa cara. É Pernambuco com potência máxima.”</p>
       </div>
     </div>
+  </div>
+</section>
+
   
     <!-- SVGs Florais estilo banner -->
     <svg class="flor flor1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -366,11 +395,153 @@
       <path fill="#FF33CC" d="M50 0C65 30 100 20 75 50C100 80 65 70 50 100C35 70 0 80 25 50C0 20 35 30 50 0Z" />
     </svg>
   </section>
-  
-  
 
-  <!-- FOOTER -->
+  <!-- PRA QUEM É -->
   
+<section id="para-quem-e" class="eixos-section position-relative overflow-hidden" style="background-color: #000;">
+  
+  <!-- Bolhas coloridas decorativas -->
+  <div style="position: absolute; width: 250px; height: 250px; border-radius: 50%; filter: blur(100px); background: #ff0077; opacity: 0.25; top: 50px; left: -50px; animation: pulse 6s infinite ease-in-out;"></div>
+  <div style="position: absolute; width: 200px; height: 200px; border-radius: 50%; filter: blur(100px); background: #00FB33; opacity: 0.25; top: 200px; right: 10%; animation: pulse 7s infinite ease-in-out 1s;"></div>
+  <div style="position: absolute; width: 180px; height: 180px; border-radius: 50%; filter: blur(100px); background: #FF6B23; opacity: 0.2; bottom: 60px; left: 20%; animation: pulse 8s infinite ease-in-out 2s;"></div>
+  <div style="position: absolute; width: 220px; height: 220px; border-radius: 50%; filter: blur(100px); background: #0056FF; opacity: 0.2; bottom: 0; right: 0; animation: pulse 6s infinite ease-in-out 3s;"></div>
+  <div style="position: absolute; width: 160px; height: 160px; border-radius: 50%; filter: blur(100px); background: #FF2E94; opacity: 0.2; top: 30%; left: 40%; animation: pulse 9s infinite ease-in-out 4s;"></div>
+
+  <!-- Conteúdo -->
+  <div class="overlay position-relative" style="z-index: 1;">
+    <h2 class="text-center fw-bold mb-4" data-aos="fade-up" style="color: #ff2e94;">PARA QUEM É?</h2>
+    <h4 class="text-center fw-bold mb-5" data-aos="fade-up">O Recife Mundo Mix é para quem:</h4>
+
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="glass-card h-100 text-center p-4">
+            <i class="bi bi-palette-fill display-4 text-warning mb-3"></i>
+            <h5 class="fw-bold">Cria, empreende e transforma com arte.</h5>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="glass-card h-100 text-center p-4">
+            <i class="bi bi-people-fill display-4 text-info mb-3"></i>
+            <h5 class="fw-bold">Acredita na potência da coletividade.</h5>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="glass-card h-100 text-center p-4">
+            <i class="bi bi-tree-fill display-4 text-success mb-3"></i>
+            <h5 class="fw-bold">Valoriza as raízes e abraça o novo.</h5>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="glass-card h-100 text-center p-4">
+            <i class="bi bi-fire display-4 text-danger mb-3"></i>
+            <h5 class="fw-bold">Quer viver experiências reais, autênticas e intensas.</h5>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="glass-card h-100 text-center p-4">
+            <i class="bi bi-lightning-fill display-4 text-primary mb-3"></i>
+            <h5 class="fw-bold">Busca estar onde as coisas acontecem primeiro.</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- SVGs decorativos (opcional) -->
+  <svg class="flor flor1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#FF33CC" d="M50 0C65 30 100 20 75 50C100 80 65 70 50 100C35 70 0 80 25 50C0 20 35 30 50 0Z" />
+  </svg>
+  <svg class="flor flor2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#00CCFF" d="M50 0C65 30 100 20 75 50C100 80 65 70 50 100C35 70 0 80 25 50C0 20 35 30 50 0Z" />
+  </svg>
+</section>
+
+<!-- SEÇÃO: QUER PARTICIPAR -->
+<section id="quer-participar" style="position: relative; padding: 80px 20px; overflow: hidden; background: #000; font-family: 'Segoe UI', sans-serif;">
+
+  <!-- Formas decorativas MULTICOLOR -->
+  <div style="position: absolute; width: 250px; height: 250px; border-radius: 50%; filter: blur(90px); background: #ff0077; opacity: 0.25; top: 50px; left: 0; animation: pulse 6s infinite ease-in-out;"></div>
+  <div style="position: absolute; width: 200px; height: 200px; border-radius: 50%; filter: blur(90px); background: #00FB33; opacity: 0.25; top: 150px; right: 10%; animation: pulse 7s infinite ease-in-out 1s;"></div>
+  <div style="position: absolute; width: 180px; height: 180px; border-radius: 50%; filter: blur(90px); background: #FF6B23; opacity: 0.2; bottom: 60px; left: 20%; animation: pulse 8s infinite ease-in-out 2s;"></div>
+  <div style="position: absolute; width: 220px; height: 220px; border-radius: 50%; filter: blur(90px); background: #0056FF; opacity: 0.2; bottom: 0; right: 0; animation: pulse 6s infinite ease-in-out 3s;"></div>
+  <div style="position: absolute; width: 160px; height: 160px; border-radius: 50%; filter: blur(90px); background: #FF2E94; opacity: 0.2; top: 20%; left: 40%; animation: pulse 9s infinite ease-in-out 4s;"></div>
+
+
+  <!-- Conteúdo -->
+  <div style="position: relative; z-index: 1; max-width: 900px; margin: 0 auto; text-align: center; color: white;">
+    <h2 style="font-size: 2.5rem; color: #ff0077; margin-bottom: 20px; animation: fadeInUp 1s ease-out forwards;">QUER PARTICIPAR?</h2>
+
+    <p style="font-size: 1.2rem; color: #ddd; margin-bottom: 40px; animation: fadeInUp 1.5s ease-out forwards;">
+      <strong>Seja expositor, apoiador, realizador ou parceiro institucional</strong><br>
+      Sua marca, projeto ou coletivo pode fazer parte desse movimento.
+    </p>
+
+    <!-- Cards -->
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; animation: fadeInUp 2s ease-out forwards;">
+      <div style="background: #111; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 20px; width: 280px; box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);">
+        <h3 style="color: #ff0077; margin-bottom: 8px; font-size: 1.2rem;">
+          <i class="bi bi-envelope-fill" style="margin-right: 8px;"></i> E-mail
+        </h3>
+        <p style="color: #eee; font-size: 1rem; margin: 0;">contato@recifemundomix.com.br</p>
+      </div>
+
+      <div style="background: #111; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 20px; width: 280px; box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);">
+        <h3 style="color: #ff0077; margin-bottom: 8px; font-size: 1.2rem;">
+          <i class="bi bi-instagram" style="margin-right: 8px;"></i> Instagram
+        </h3>
+        <p style="color: #eee; font-size: 1rem; margin: 0;">@recifemundomix</p>
+      </div>
+    </div>
+
+    <!-- Botão -->
+    <a href="#formulario-interesse" style="margin-top: 40px; display: inline-block; background: #ff0077; color: white; padding: 15px 30px; border-radius: 30px; font-weight: bold; text-decoration: none; transition: background 0.3s ease; animation: bounce 2s infinite;">
+      QUERO PARTICIPAR DO MOVIMENTO
+    </a>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <!-- FOOTER -->
+  <!-- Seção 9 – Rodapé / Realização -->
+<!-- Rodapé horizontal com cor rosa -->
+<footer class="footer-custom text-white py-4">
+  <div class="container">
+    <div class="row text-center text-md-start align-items-center">
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h6 class="text-uppercase fw-bold text-pink">Realização</h6>
+        <p class="mb-0">Instituto Asa Branca</p>
+      </div>
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h6 class="text-uppercase fw-bold text-pink">Coordenação Criativa</h6>
+        <p class="mb-0">Seja N1</p>
+      </div>
+      <div class="col-md-4">
+        <h6 class="text-uppercase fw-bold text-pink">Apoio Institucional</h6>
+        <p class="mb-0">Governo do Estado, Prefeitura do Recife, Fundarpe, Empetur, Sebrae e outras instituições culturais.</p>
+      </div>
+    </div>
+
+    <hr class="border-secondary my-4" style="opacity: 0.2;">
+
+    <div class="text-center small text-muted">
+      © 2025 Recife Mundo Mix – Todos os direitos reservados.
+    </div>
+  </div>
+</footer>
+
+
   <!-- JS -->
  <!-- SCRIPTS REQUERIDOS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -459,6 +630,11 @@
     });
   });
 </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 
 </body>
 </html>
