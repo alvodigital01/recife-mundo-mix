@@ -51,6 +51,7 @@ html {
   outline: none !important;
 }
 
+
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
@@ -69,6 +70,38 @@ html {
     flex-grow: 0 !important;
   }
 }
+
+/* Remover qualquer decoração padrão */
+.navbar-nav .nav-link {
+  position: relative;
+  color: white;
+  text-decoration: none; /* Remove sublinhado padrão */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Brilho suave ao passar o mouse */
+.navbar-nav .nav-link:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #00fb322c, 0 0 10px #00fb3229, 0 0 15px #00FB33;
+}
+
+/* Linha inferior animada verde */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px; /* Distância da linha abaixo do texto */
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: #00FB33;
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 80%;
+}
+
 
 /* ------------------------------------
   HERO (imagem + vídeo + logo animada)
