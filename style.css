@@ -106,7 +106,7 @@ body {
 /* 📱 Ajuste para mobile: logo maior */
 @media (max-width: 768px) {
   .hero-logo {
-    width: 100vw !important;     /* força a largura total */
+    width: 85vw !important;     /* força a largura total */
     height: auto !important;
     max-width: 100% !important;
     margin: 0 auto;
