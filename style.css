@@ -4,6 +4,10 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 .titulo-hero, .titulo {
   font-family: 'Russo One', sans-serif;

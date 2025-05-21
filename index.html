@@ -29,16 +29,16 @@
     <div class="collapse navbar-collapse justify-content-center custom-collapse" id="navbarNav">
       <ul class="navbar-nav text-center gap-lg-4">
         <li class="nav-item">
-          <a class="nav-link fw-semibold text-white" href="#">VISÃO GERAL</a>
+          <a class="nav-link fw-semibold text-white" href="#contador">VISÃO GERAL</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-semibold text-white" href="#">SOBRE O FESTIVAL</a>
+          <a class="nav-link fw-semibold text-white" href="#para-quem-e">SOBRE O FESTIVAL</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-semibold text-white" href="#">EXPERIÊNCIAS</a>
+          <a class="nav-link fw-semibold text-white" href="#eixos">EXPERIÊNCIAS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-semibold text-white" href="#">QUERO PATROCINAR</a>
+          <a class="nav-link fw-semibold text-white" href="#quer-participar">QUERO PATROCINAR</a>
         </li>
       </ul>
     </div>
@@ -133,7 +133,7 @@
   <!-- Aftermovie 2025 -->
 <div class="container py-5" data-aos="fade-up">
   <h2 class="text-center fw-bold mb-4" style="color: #ff2e94;">
-    RECIFE MIX 2025
+    RECIFE MUNDO MIX 2025
   </h2>
   <div class="ratio ratio-16x9">
     <iframe 
@@ -633,6 +633,22 @@
     });
   });
 </script>
+
+<script>
+  // Fecha o menu mobile ao clicar em um link
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const navbarToggler = document.querySelector('.navbar-toggler');
+      const navbarCollapse = document.getElementById('navbarNav');
+
+      if (window.innerWidth < 992 && navbarCollapse.classList.contains('show')) {
+        navbarToggler.click(); // simula o clique no botão hamburguer para fechar
+      }
+    });
+  });
+</script>
+
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
