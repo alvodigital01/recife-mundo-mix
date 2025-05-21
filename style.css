@@ -147,43 +147,6 @@ body {
   transform: scale(1.05) rotate(1deg);
 }
 
-/* ------------------------------------
-  FLORES ANIMADAS (USADAS EM VÁRIAS SEÇÕES)
-------------------------------------- */
-.flor {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  opacity: 0.3;
-  animation: girar 120s linear infinite;
-  z-index: 0;
-}
-
-.flor1 {
-  top: -50px;
-  left: -50px;
-}
-
-.flor2 {
-  bottom: -50px;
-  right: -50px;
-}
-
-.flor3 {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation-duration: 90s;
-}
-
-@keyframes girar {
-  from {
-    transform: rotate(0deg) scale(1);
-  }
-  to {
-    transform: rotate(360deg) scale(1.1);
-  }
-}
 
 /* ------------------------------------
   SEÇÕES: DEPOIMENTOS, PROJEÇÕES, MOVIMENTOS
