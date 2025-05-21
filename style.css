@@ -442,26 +442,44 @@ html {
 .footer-custom {
   background: none;
   padding: 2rem 0;
-  position: relative;
+  text-align: center;
 }
 
 .footer-banner-wrapper {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Alinha o conteúdo mais à esquerda */
-  gap: 2rem; /* Espaço entre o banner e a logo */
-  max-width: 100%;
+  justify-content: center;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
+/* Imagem principal (rodape.png) */
 .footer-banner {
+  max-height: 100px;
   height: auto;
-  max-height: 110px; /* Ajuste conforme a proporção desejada */
   width: auto;
 }
 
+/* Logo adicional (marca_recortada.png) */
 .footer-logo-extra {
+  max-height: 100px;
   height: auto;
-  max-height: 80px; /* mesmo valor da altura do banner */
   width: auto;
 }
+
+/* Versão Mobile */
+@media (max-width: 768px) {
+  .footer-banner-wrapper {
+    flex-direction: column;
+  }
+
+  .footer-banner {
+    max-width: 90%;
+    max-height: 150px; /* aumenta a imagem principal */
+  }
+
+  .footer-logo-extra {
+    display: none; /* esconde a logo no mobile */
+  }
+}
+
