@@ -35,6 +35,7 @@ html {
   z-index: 100;
 }
 
+
 .custom-toggler {
   background: none !important;
   border: none !important;
@@ -363,6 +364,21 @@ html {
   }
 }
 
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 60px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #contador,
+  #para-quem-e,
+  #eixos,
+  #quer-participar {
+    scroll-margin-top: 80px; /* Ajuste conforme a altura real da sua navbar */
+  }
+}
 
 
 /* ------------------------------------
