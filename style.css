@@ -44,14 +44,12 @@ body {
 
 .custom-toggler:focus {
   outline: none !important;
-  box-shadow: none !important;
 }
 
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* Mobile menu */
 @media (max-width: 991.98px) {
   .custom-collapse {
     background-color: #ff2e94;
@@ -61,7 +59,6 @@ body {
   }
 }
 
-/* Desktop menu */
 @media (min-width: 992px) {
   .navbar-collapse {
     flex-grow: 0 !important;
@@ -69,23 +66,21 @@ body {
 }
 
 /* ------------------------------------
-  HERO
+  HERO (imagem + vídeo + logo animada)
 ------------------------------------- */
-/* HERO com imagem de fundo */
 .hero-image {
   position: relative;
   width: 100%;
   height: 100vh;
   background: url('imagens/opcao1.png') no-repeat center center;
   background-size: cover;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 }
 
-/* Vídeo sobre a imagem com opacidade */
 .hero-video {
   position: absolute;
   top: 0;
@@ -94,24 +89,20 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  opacity: 0.2; /* Mais visível */
+  opacity: 0.2;
   pointer-events: none;
 }
 
-/* Conteúdo acima de tudo */
 .hero-content {
   position: relative;
   z-index: 2;
 }
 
-/* Logo maior e responsiva */
 .hero-logo {
   width: 60vw;
-  max-width: px;
   height: auto;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
   .hero-logo {
     width: 100vw;
@@ -119,37 +110,23 @@ body {
   }
 }
 
-/* Nova animação: zoom suave + fade + flutuação */
 .animated-logo {
   animation: logoIntro 2s ease-out forwards, logoFloat 6s ease-in-out infinite;
   opacity: 0;
 }
 
-/* Fade in + Zoom inicial */
 @keyframes logoIntro {
-  0% {
-    transform: scale(0.7);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+  0% { transform: scale(0.7); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
 }
 
-/* Flutuação contínua */
 @keyframes logoFloat {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-12px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
 }
-
 
 /* ------------------------------------
-  HOVERS E EFEITOS
+  EFEITOS GERAIS (hover, animações)
 ------------------------------------- */
 .nav-link:hover {
   text-decoration: underline;
@@ -163,7 +140,7 @@ body {
 
 .icon-hover:hover {
   transform: scale(1.2) rotate(5deg);
-  color: #ffffff !important;
+  color: #fff !important;
   filter: brightness(1.2);
 }
 
@@ -186,19 +163,16 @@ body {
   transform: scale(1.05) rotate(1deg);
 }
 
-
 /* ------------------------------------
-  SEÇÕES: DEPOIMENTOS, PROJEÇÕES, MOVIMENTOS
+  SEÇÕES PADRONIZADAS: Depoimentos, Projeções, Movimentos
 ------------------------------------- */
-#depoimentos,
-#projecoes,
-#movimentos {
+#depoimentos, #projecoes, #movimentos {
   position: relative;
   background-color: #000;
-  overflow: hidden;
-  padding: 80px 20px;
   color: white;
+  padding: 80px 20px;
   text-align: center;
+  overflow: hidden;
   z-index: 1;
 }
 
@@ -208,11 +182,11 @@ body {
 }
 
 .depoimentos {
+  max-width: 800px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 800px;
-  margin: auto;
   font-size: 1.3rem;
   line-height: 1.6;
 }
@@ -223,27 +197,35 @@ body {
   border-radius: 16px;
   padding: 20px;
   backdrop-filter: blur(10px);
-  color: #fff;
   animation: fadeInUp 1s ease forwards;
+  color: #fff;
   height: 100%;
 }
 
+/* Bolhas decorativas para várias seções */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.bubble.pink    { background: #ff2e94; width: 300px; height: 300px; top: -100px; left: -120px; }
+.bubble.blue    { background: #00ffff; width: 250px; height: 250px; top: 60%; left: 10%; }
+.bubble.yellow  { background: #ffff00; width: 220px; height: 220px; top: 20%; right: -100px; }
+.bubble.purple  { background: #b832fa; width: 200px; height: 200px; bottom: -60px; right: 10%; }
+
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 /* ------------------------------------
-  SEÇÃO EIXOS
+  SEÇÃO EIXOS DA EXPERIÊNCIA
 ------------------------------------- */
-.eixos-section {
-  background-color: #000; /* Fundo preto sólido */
+.eixos-section, .contador-section {
+  background-color: #000;
   color: white;
   padding: 80px 20px;
   position: relative;
@@ -251,285 +233,8 @@ body {
   z-index: 1;
 }
 
-.glass-card {
-  background: rgba(255, 255, 255, 0.07);
-  border-radius: 16px;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: white;
-  transition: transform 0.3s;
-}
-
-.glass-card:hover {
-  transform: translateY(-5px);
-}
-
-.icon-hover {
-  transition: transform 0.3s ease;
-}
-
-.icon-hover:hover {
-  transform: scale(1.1);
-}
-
-.eixos-section {
-  background-color: #000; /* fundo preto sólido */
-  color: white;
-  padding: 80px 20px;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-/* Bolinhas flutuantes de fundo */
 .eixos-section::before,
-.eixos-section::after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-  background: radial-gradient(circle, #ff2e94aa 0%, transparent 70%);
-  filter: blur(80px);
-  opacity: 0.2;
-  z-index: 0;
-}
-
-.eixos-section::before {
-  width: 300px;
-  height: 300px;
-  top: -100px;
-  left: -100px;
-}
-
-.eixos-section::after {
-  width: 400px;
-  height: 400px;
-  bottom: -100px;
-  right: -100px;
-}
-
-/* Garantir que conteúdo fique acima das bolinhas */
-.eixos-section .overlay {
-  position: relative;
-  z-index: 1;
-}
-
-
-/* ------------------------------------
-  SEÇÃOPRA QUEM É
-------------------------------------- */
-.para-quem-section {
-  background-color: #000000;
-  position: relative;
-  overflow: hidden;
-  
-}
-
-.glass-card {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  
-  transition: transform 0.3s ease;
-}
-
-.glass-card:hover {
-  transform: translateY(-8px);
-}
-
-.icon-hover {
-  transition: transform 0.3s ease;
-}
-
-.icon-hover:hover {
-  transform: scale(1.1);
-}
-
-
-
-
-.flor2 {
-  bottom: 10%;
-  right: 15%;
-}
-
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
-  100% { transform: translateY(0); }
-}
-
-/* ------------------------------------
-  SEÇÃO footer
-------------------------------------- */
-
-@keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.2); }
-    }
-    
-    @keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.2); }
-}
-
-
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
-    }
-
-    @media (max-width: 600px) {
-      #quer-participar .cards {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.2); }
-    }
-
-
-
-
-
-    #projecoes {
-  position: relative;
-  background-color: #000;
-  overflow: hidden;
-  padding: 80px 20px;
-  color: white;
-  text-align: center;
-  z-index: 1;
-}
-
-#projecoes .overlay {
-  position: relative;
-  z-index: 2;
-}
-
-/* Bolhas decorativas */
-#projecoes .bubble {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(100px);
-  opacity: 0.2;
-  z-index: 0;
-}
-
-#projecoes .bubble.pink {
-  background: #ff2e94;
-  width: 300px;
-  height: 300px;
-  top: -100px;
-  left: -120px;
-}
-
-#projecoes .bubble.blue {
-  background: #00ffff;
-  width: 250px;
-  height: 250px;
-  top: 60%;
-  left: 10%;
-}
-
-#projecoes .bubble.yellow {
-  background: #ffff00;
-  width: 220px;
-  height: 220px;
-  top: 20%;
-  right: -100px;
-}
-
-#projecoes .bubble.purple {
-  background: #b832fa;
-  width: 200px;
-  height: 200px;
-  bottom: -60px;
-  right: 10%;
-}
-
-
-
-#depoimentos {
-  position: relative;
-  background-color: #000;
-  overflow: hidden;
-  padding: 80px 20px;
-  color: white;
-  text-align: center;
-  z-index: 1;
-}
-
-#depoimentos .overlay {
-  position: relative;
-  z-index: 2;
-}
-
-/* Bolhas decorativas */
-#depoimentos .bubble {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(100px);
-  opacity: 0.2;
-  z-index: 0;
-}
-
-#depoimentos .bubble.pink {
-  background: #ff2e94;
-  width: 300px;
-  height: 300px;
-  top: -80px;
-  left: -100px;
-}
-
-#depoimentos .bubble.blue {
-  background: #00ffff;
-  width: 250px;
-  height: 250px;
-  top: 60%;
-  left: 15%;
-}
-
-#depoimentos .bubble.yellow {
-  background: #ffff00;
-  width: 220px;
-  height: 220px;
-  top: 25%;
-  right: -100px;
-}
-
-#depoimentos .bubble.purple {
-  background: #b832fa;
-  width: 200px;
-  height: 200px;
-  bottom: -60px;
-  right: 10%;
-}
-
-
-.contador-section {
-  background-color: #000;
-  color: white;
-  padding: 80px 20px;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
+.eixos-section::after,
 .contador-section::before,
 .contador-section::after {
   content: '';
@@ -541,6 +246,7 @@ body {
   z-index: 0;
 }
 
+.eixos-section::before,
 .contador-section::before {
   width: 300px;
   height: 300px;
@@ -548,6 +254,7 @@ body {
   left: -100px;
 }
 
+.eixos-section::after,
 .contador-section::after {
   width: 400px;
   height: 400px;
@@ -555,21 +262,44 @@ body {
   right: -100px;
 }
 
-.contador-section .overlay {
-  position: relative;
-  z-index: 1;
-}
-
-.contador-glass {
+.glass-card, .contador-glass {
   background: rgba(255, 255, 255, 0.07);
   border-radius: 16px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
+  transition: transform 0.3s;
   box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
 
+.glass-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ------------------------------------
+  SEÇÃO PRA QUEM É
+------------------------------------- */
+.para-quem-section {
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.flor2 {
+  bottom: 10%;
+  right: 15%;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+/* ------------------------------------
+  SEÇÃO CONTADOR
+------------------------------------- */
 .tempo {
   display: flex;
   flex-direction: column;
@@ -596,15 +326,23 @@ body {
   line-height: 1;
 }
 
-/* Animação das bolhas */
+/* ------------------------------------
+  FOOTER + animações auxiliares
+------------------------------------- */
 @keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-    opacity: 0.25;
-  }
-  50% {
-    transform: scale(1.2);
-    opacity: 0.35;
+  0%, 100% { transform: scale(1); opacity: 0.25; }
+  50%      { transform: scale(1.2); opacity: 0.35; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); }
+}
+
+@media (max-width: 600px) {
+  #quer-participar .cards {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
