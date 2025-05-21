@@ -573,16 +573,19 @@
 
   counters.forEach(counter => {
     counter.innerText = '+0';
-    const updateCounter = () => {
-      const target = +counter.getAttribute('data-target');
-      const count = +counter.innerText.replace('+', '').replace('.', '');
-      const increment = target / 100;
 
-      if (count < target) {
-        counter.innerText = '+' + Math.ceil(count + increment);
+    const updateCounter = () => {
+      const target = parseInt(counter.getAttribute('data-target'));
+      let current = parseInt(counter.innerText.replace(/\D/g, '')); // Remove qualquer caractere não numérico
+      const increment = Math.ceil(target / 100);
+
+      if (current < target) {
+        current += increment;
+        if (current > target) current = target;
+        counter.innerText = '+' + current.toLocaleString('pt-BR');
         setTimeout(updateCounter, 15);
       } else {
-        counter.innerText = '+' + target.toLocaleString();
+        counter.innerText = '+' + target.toLocaleString('pt-BR');
       }
     };
 
@@ -598,6 +601,7 @@
     observer.observe(counter);
   });
 </script>
+
 
 <script>
   const video = document.querySelector('.hero-video');
@@ -633,26 +637,33 @@
 
 
 <script>
-  const dataDoEvento = new Date("March 14, 2026 20:00:00").getTime(); // altere a data
+  const dataAlvo = new Date("2025-08-21T00:00:00").getTime();
 
-  function atualizarContador() {
+  const atualizarContador = setInterval(() => {
     const agora = new Date().getTime();
-    const diferenca = dataDoEvento - agora;
+    const distancia = dataAlvo - agora;
 
-    const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
-    const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
-    const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+    if (distancia < 0) {
+      clearInterval(atualizarContador);
+      document.getElementById("dias").innerHTML = "00";
+      document.getElementById("horas").innerHTML = "00";
+      document.getElementById("minutos").innerHTML = "00";
+      document.getElementById("segundos").innerHTML = "00";
+      return;
+    }
 
-    document.getElementById("dias").textContent = dias;
-    document.getElementById("horas").textContent = horas;
-    document.getElementById("minutos").textContent = minutos;
-    document.getElementById("segundos").textContent = segundos;
-  }
+    const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
 
-  atualizarContador();
-  setInterval(atualizarContador, 1000);
+    document.getElementById("dias").innerHTML = String(dias).padStart(2, '0');
+    document.getElementById("horas").innerHTML = String(horas).padStart(2, '0');
+    document.getElementById("minutos").innerHTML = String(minutos).padStart(2, '0');
+    document.getElementById("segundos").innerHTML = String(segundos).padStart(2, '0');
+  }, 1000);
 </script>
+
 
 
 
