@@ -103,13 +103,16 @@ body {
   height: auto;
 }
 
+/* 📱 Ajuste para mobile: logo maior */
 @media (max-width: 768px) {
   .hero-logo {
-    width: 100vw;
-    max-width: 100vh;
+    width: 85vw;         /* aumenta o tamanho da logo */
+    max-width: 95vw;     /* limite para não encostar nas bordas */
+    margin-top: 10vh;    /* ajusta verticalmente se necessário */
   }
 }
 
+/* ✨ Animações */
 .animated-logo {
   animation: logoIntro 2s ease-out forwards, logoFloat 6s ease-in-out infinite;
   opacity: 0;
