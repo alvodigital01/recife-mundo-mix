@@ -140,7 +140,6 @@ body {
 
 .icon-hover:hover {
   transform: scale(1.2) rotate(5deg);
-  color: #fff !important;
   filter: brightness(1.2);
 }
 
