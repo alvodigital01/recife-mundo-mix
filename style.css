@@ -439,3 +439,29 @@ html {
   }
 }
 
+.footer-custom {
+  background: none;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.footer-banner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinha o conteúdo mais à esquerda */
+  gap: 2rem; /* Espaço entre o banner e a logo */
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.footer-banner {
+  height: auto;
+  max-height: 110px; /* Ajuste conforme a proporção desejada */
+  width: auto;
+}
+
+.footer-logo-extra {
+  height: auto;
+  max-height: 80px; /* mesmo valor da altura do banner */
+  width: auto;
+}
