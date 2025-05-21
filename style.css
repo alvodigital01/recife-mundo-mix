@@ -106,7 +106,7 @@ body {
 @media (max-width: 768px) {
   .hero-logo {
     width: 100vw;
-    max-width: 780px;
+    max-width: 100vh;
   }
 }
 
