@@ -385,33 +385,38 @@ html {
   color: #ff2e94;
 }
 
-@media (max-width: 768px) {
-  .contador-glass.flex-column-mobile {
-    flex-direction: column !important;
-    align-items: center;
+/* Para desktop, une todos os tempos em uma única linha */
+@media (min-width: 768px) {
+  .custom-contador {
+    flex-direction: row !important;
   }
 
   .grupo-superior,
   .grupo-inferior {
+    margin: 0;
+    gap: 3rem;
+  }
+
+  .grupo {
+    display: flex !important;
+  }
+}
+
+/* Para mobile: dois grupos empilhados */
+@media (max-width: 767.98px) {
+  .custom-contador {
+    flex-direction: column !important;
+  }
+
+  .grupo {
     justify-content: center;
   }
-}
 
-@media (max-width: 768px) {
-  html {
-    scroll-padding-top: 90px;
+  .grupo-inferior {
+    margin-top: 1rem;
   }
 }
 
-
-@media (max-width: 768px) {
-  #contador,
-  #para-quem-e,
-  #eixos,
-  #quer-participar {
-    scroll-margin-top: 80px; /* Ajuste conforme a altura real da sua navbar */
-  }
-}
 
 
 /* ------------------------------------

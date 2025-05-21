@@ -80,9 +80,9 @@
   <div class="overlay">
   <h2 class="text-center fw-bold mb-4" style="color: #ff2e94;">FALTAM</h2>
 
-  <div class="contador-glass p-4 d-flex justify-content-center align-items-center flex-wrap gap-3 flex-md-row flex-column-mobile">
-    
-    <div class="grupo-superior d-flex gap-3">
+  <div class="contador-glass p-4 d-flex justify-content-center align-items-center flex-wrap gap-3 flex-md-row flex-column custom-contador">
+    <!-- Grupo superior (aparece apenas no mobile) -->
+    <div class="grupo grupo-superior d-flex gap-3">
       <div class="tempo">
         <span id="dias">00</span>
         <p>DIAS</p>
@@ -93,7 +93,8 @@
       </div>
     </div>
 
-    <div class="grupo-inferior d-flex gap-3 mt-3">
+    <!-- Grupo inferior (aparece apenas no mobile) -->
+    <div class="grupo grupo-inferior d-flex gap-3 mt-md-0 mt-3">
       <div class="tempo">
         <span id="minutos">00</span>
         <p>MINUTOS</p>
@@ -103,9 +104,9 @@
         <p>SEGUNDOS</p>
       </div>
     </div>
-
   </div>
 </div>
+
 
     <div class="overlay py-5 position-relative" style="z-index: 1;">
     <div class="container">
