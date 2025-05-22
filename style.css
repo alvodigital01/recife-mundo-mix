@@ -1,15 +1,16 @@
 /* ------------------------------------
   GERAIS
 ------------------------------------- */
-
-body, html {
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-  flex: 1; /* Ocupa o espaço restante entre header e footer */
+  flex: 1;
 }
 
 body {
