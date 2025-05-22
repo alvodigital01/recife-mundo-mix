@@ -266,7 +266,7 @@ html {
 /* ------------------------------------
   SEÇÕES PADRONIZADAS: Depoimentos, Projeções, Movimentos
 ------------------------------------- */
-#depoimentos, #projecoes, #movimentos {
+#depoimentos, #projecoes, #movimentos,  #localizacao, #video {
   position: relative;
   background-color: #000;
   color: white;
