@@ -517,17 +517,26 @@
 <footer class="footer-custom text-white py-4">
   <div class="container">
     <div class="footer-banner-wrapper">
-      <img src="imagens/marcas1.png" alt="Marcas realizadoras" class="footer-banner" />
-      <img src="imagens/marcas2.png" alt="Marcas realizadoras" class="footer-banner" />
-      <img src="imagens/marcas3.png" alt="Logo da marca" class="footer-logo-extra" />
+
+      <!-- Imagens apenas para MOBILE -->
+      <img src="imagens/marcas1.png" alt="Marca 1" class="footer-banner mobile-only" />
+      <img src="imagens/marcas2.png" alt="Marca 2" class="footer-banner mobile-only" />
+      <img src="imagens/marcas3.png" alt="Marca 3" class="footer-banner mobile-only" />
+
+      <!-- Imagem apenas para DESKTOP -->
+      <img src="imagens/RODAPE.png" alt="Rodapé Desktop" class="footer-banner desktop-only" />
+
+      <!-- Logo adicional (visível apenas no desktop) -->
+      <img src="imagens/marca_recortada.png" alt="Logo da marca" class="footer-logo-extra desktop-only" />
+
     </div>
 
-    <div class="text-center small mt-3">
+    <div class="text-center small mt-3 copyright-text">
       © 2025 Recife Mundo Mix – Todos os direitos reservados.
     </div>
   </div>
 </footer>
- 
+
 
 
 
@@ -673,5 +682,9 @@
     document.getElementById("segundos").innerHTML = String(segundos).padStart(2, '0');
   }, 1000);
 </script>
+
+
+
+
 </body>
 </html>
