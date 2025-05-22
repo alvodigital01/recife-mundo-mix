@@ -12,14 +12,10 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="icon" href="imagens/marca_recortada.png" type="image/png">
 
- 
-  
-
 
 </head>
-<body>
+<body id="contador">
   
-<main>
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top custom-navbar">
     <div class="container justify-content-center position-relative">
   
@@ -533,16 +529,12 @@
         <img src="imagens/marca_recortada.png" alt="Logo da marca" class="footer-logo-extra desktop-only" />
   
       </div>
-  
+ 
       <div class="text-center small mt-3 copyright-text">
         © 2025 Recife Mundo Mix – Todos os direitos reservados.
       </div>
     </div>
   </footer>
-</main>
-
-
-
 
 
   <!-- JS -->
@@ -686,31 +678,7 @@
     document.getElementById("segundos").innerHTML = String(segundos).padStart(2, '0');
   }, 1000);
 </script>
-<script>
-  // Bloquear clique com o botão direito
-  document.addEventListener('contextmenu', event => event.preventDefault());
 
-  // Bloquear atalhos comuns (Ctrl+U, Ctrl+Shift+I, F12, Ctrl+C, Ctrl+X)
-  document.addEventListener('keydown', function(e) {
-    // Ctrl+U
-    if (e.ctrlKey && e.key.toLowerCase() === 'u') {
-      e.preventDefault();
-    }
-
-    // Ctrl+Shift+I ou F12 (Inspecionar)
-    if ((e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i') || e.key === 'F12') {
-      e.preventDefault();
-    }
-
-    // Ctrl+C (copiar) ou Ctrl+X (recortar)
-    if (e.ctrlKey && ['c', 'x'].includes(e.key.toLowerCase())) {
-      e.preventDefault();
-    }
-  });
-
-  // Bloquear seleção de texto
-  document.addEventListener('selectstart', e => e.preventDefault());
-</script>
 
 
 

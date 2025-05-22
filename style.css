@@ -1,16 +1,17 @@
 /* ------------------------------------
   GERAIS
 ------------------------------------- */
-html, body {
-  height: 100%;
+
+
+body {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
+  overflow-x: hidden;
 }
 
-main {
-  flex: 1;
+html, body {
+  height: auto; /* ou remova 'height: 100%' */
+  background-color: #000; /* se quiser fundo contínuo */
 }
 
 body {
@@ -541,3 +542,7 @@ html {
   }
 }
 
+#contador {
+  margin: 0;
+  padding: 0;
+}
