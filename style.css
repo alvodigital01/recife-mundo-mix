@@ -30,6 +30,28 @@ html {
 /* ------------------------------------
   NAVBAR
 ------------------------------------- */
+ 
+.evento-linha {
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.evento-nao-quebrar {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 576px) {
+  .evento-linha {
+    font-size: 1.3rem; /* reduz só no mobile */
+  }
+
+  .evento-nao-quebrar {
+    font-size: 1.3rem;
+  }
+}
 .custom-navbar {
   background-color: #ff2e94;
   z-index: 100;
