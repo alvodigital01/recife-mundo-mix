@@ -62,6 +62,7 @@
     <section id="contador" class="contador-section container-fluid px-2">
   
   <h2 class="titulo-evento text-center fw-bold mb-4" data-aos="fade-up">
+    <br>
     <div class="evento-linha rosa" style="color: #ff2e94;">3 DIAS DE CULTURA VIVA</div>
     <div class="evento-linha verde evento-nao-quebrar" style="color: #00FB33;">21 A 24 DE AGOSTO DE 2025</div>
     <div class="evento-linha rosa" style="color: #FF2E94;">RECIFE ANTIGO</div>
@@ -481,7 +482,6 @@
     <div style="position: relative; z-index: 1; max-width: 900px; margin: 0 auto; text-align: center; color: white;">
       <h2 class="text-center fw-bold mb-4" data-aos="fade-up" style="color: #ff2e94;">QUER PARTICIPAR?</h2>
   
-       style="font-size: 1.2rem; color: #ddd; margin-bottom: 40px; animation: fadeInUp 1.5s ease-out forwards;">
         <strong>Seja expositor, apoiador, realizador ou parceiro institucional</strong><br>
         Sua marca, projeto ou coletivo pode fazer parte desse movimento.
       </p>
@@ -643,6 +643,37 @@
     });
   });
 </script>
+<!-- JS -->
+
+
+
+</script>
+<script>
+  // Bloquear clique com o botão direito
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  // Bloquear atalhos comuns (Ctrl+U, Ctrl+Shift+I, F12, Ctrl+C, Ctrl+X)
+  document.addEventListener('keydown', function(e) {
+    // Ctrl+U
+    if (e.ctrlKey && e.key.toLowerCase() === 'u') {
+      e.preventDefault();
+    }
+
+    // Ctrl+Shift+I ou F12 (Inspecionar)
+    if ((e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i') || e.key === 'F12') {
+      e.preventDefault();
+    }
+
+    // Ctrl+C (copiar) ou Ctrl+X (recortar)
+    if (e.ctrlKey && ['c', 'x'].includes(e.key.toLowerCase())) {
+      e.preventDefault();
+    }
+  });
+
+  // Bloquear seleção de texto
+  document.addEventListener('selectstart', e => e.preventDefault());
+</script>
+
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
