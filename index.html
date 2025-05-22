@@ -381,7 +381,10 @@
 
   <div class="overlay">
     <h2 class="text-center fw-bold mb-4" data-aos="fade-up" style="color: #ff2e94;">
-      ONDE ACONTECE O RECIFE MUNDO MIX
+      Marco Zero, o coração do Recife.
+    </h2>
+    <h2 class="text-center fw-bold mb-4" data-aos="fade-up" style="color: #00FB33;">
+      É aqui que pulsa a batida do Recife Mundo Mix!
     </h2>
     
     <div class="depoimentos">
@@ -683,6 +686,31 @@
     document.getElementById("minutos").innerHTML = String(minutos).padStart(2, '0');
     document.getElementById("segundos").innerHTML = String(segundos).padStart(2, '0');
   }, 1000);
+</script>
+<script>
+  // Bloquear clique com o botão direito
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  // Bloquear atalhos comuns (Ctrl+U, Ctrl+Shift+I, F12, Ctrl+C, Ctrl+X)
+  document.addEventListener('keydown', function(e) {
+    // Ctrl+U
+    if (e.ctrlKey && e.key.toLowerCase() === 'u') {
+      e.preventDefault();
+    }
+
+    // Ctrl+Shift+I ou F12 (Inspecionar)
+    if ((e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i') || e.key === 'F12') {
+      e.preventDefault();
+    }
+
+    // Ctrl+C (copiar) ou Ctrl+X (recortar)
+    if (e.ctrlKey && ['c', 'x'].includes(e.key.toLowerCase())) {
+      e.preventDefault();
+    }
+  });
+
+  // Bloquear seleção de texto
+  document.addEventListener('selectstart', e => e.preventDefault());
 </script>
 
 
