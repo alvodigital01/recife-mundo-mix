@@ -1,6 +1,21 @@
 /* ------------------------------------
   GERAIS
 ------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  flex: 1; /* Ocupa o espaço restante entre header e footer */
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
