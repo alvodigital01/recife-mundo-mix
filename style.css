@@ -461,47 +461,32 @@ html {
   }
 }
 
-.footer-custom {
-  background: none;
-  padding: 2rem 0;
-  text-align: center;
-}
-
 .footer-banner-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
-/* Imagem principal (rodape.png) */
-.footer-banner {
-  max-height: 100px;
-  height: auto;
-  width: auto;
-}
-
-/* Logo adicional (marca_recortada.png) */
+.footer-banner,
 .footer-logo-extra {
-  max-height: 100px;
+  max-height: 80px;
   height: auto;
   width: auto;
 }
 
-/* Versão Mobile */
-@media (max-width: 768px) {
+/* Responsivo para mobile */
+@media (max-width: 576px) {
   .footer-banner-wrapper {
     flex-direction: column;
+    align-items: center;
   }
 
-  .footer-banner {
-    max-width: 90%;
-    max-height: 150px; /* aumenta a imagem principal */
-  }
-
+  .footer-banner,
   .footer-logo-extra {
-    display: none; /* esconde a logo no mobile */
+    max-width: 90%;
+    height: auto;
   }
 }
 
