@@ -36,16 +36,15 @@
           <li class="nav-item">
             <a class="nav-link fw-semibold text-white" style="font-size: 0.9em;" href="#eixos">POLOS CULTURAIS</a>
           </li>
-          <li class="nav-item dropdown custom-dropdown">
-  <a class="nav-link fw-semibold text-white dropdown-toggle" href="#" id="conexoesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 0.9em;">
+   <li class="nav-item dropdown custom-dropdown">
+  <a class="nav-link fw-semibold text-white dropdown-toggle conexoes-toggle" href="#" style="font-size: 0.9em;">
     CONEXÕES
   </a>
-  <ul class="dropdown-menu bg-black border-0 shadow" aria-labelledby="conexoesDropdown">
+  <ul class="dropdown-menu bg-black border-0 shadow text-center">
     <li><a class="dropdown-item text-white" href="#acao1">Ação 1</a></li>
-    <li><a class="dropdown-item text-white" href="#acao2">Ação 2</a></li>
-    <li><a class="dropdown-item text-white" href="#acao3">Ação 3</a></li>
   </ul>
 </li>
+
 
           <li class="nav-item">
             <a class="nav-link fw-semibold text-white" style="font-size: 0.9em;" href="#quer-participar">OFICINAS E PALESTRAS</a>
@@ -559,30 +558,38 @@
 
   <!-- JS -->
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const isMobile = window.innerWidth < 992;
-    const dropdownToggle = document.getElementById('conexoesDropdown');
-    const dropdownItem = dropdownToggle.closest('.custom-dropdown');
-    const navbarCollapse = document.getElementById('navbarNav');
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".conexoes-toggle");
+    const dropdown = toggle.closest(".custom-dropdown");
+    const navbarCollapse = document.getElementById("navbarNav");
 
-    if (isMobile) {
-      dropdownToggle.addEventListener('click', function (e) {
-        // Impede o menu de fechar
-        e.preventDefault();
-        e.stopPropagation(); // Impede que o clique feche o navbar
+    toggle.addEventListener("click", function (e) {
+      if (window.innerWidth < 992) {
+        e.preventDefault(); // Evita navegação
+        e.stopPropagation(); // Impede o fechamento do navbar
 
-        // Alterna visibilidade do submenu
-        dropdownItem.classList.toggle('show');
-      });
+        // Fecha qualquer outro submenu aberto
+        document.querySelectorAll(".custom-dropdown").forEach(item => {
+          if (item !== dropdown) item.classList.remove("show");
+        });
 
-      // Evita que cliques no submenu fechem o menu todo
-      const submenu = dropdownItem.querySelector('.dropdown-menu');
-      submenu.addEventListener('click', function (e) {
-        e.stopPropagation();
-      });
-    }
+        // Toggle da classe para abrir submenu
+        dropdown.classList.toggle("show");
+      }
+    });
+
+    // Fecha o submenu se clicar fora
+    document.addEventListener("click", function (e) {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove("show");
+      }
+    });
   });
 </script>
+
+
+
+
 
 
  <!-- SCRIPTS REQUERIDOS -->
