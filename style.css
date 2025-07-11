@@ -196,6 +196,16 @@ html {
   }
 }
 
+@media (max-width: 991.98px) {
+  .custom-dropdown .dropdown-menu {
+    display: none;
+  }
+
+  .custom-dropdown.show .dropdown-menu {
+    display: block !important;
+  }
+}
+
 /* ------------------------------------
   HERO (imagem + vídeo + logo animada)
 ------------------------------------- */

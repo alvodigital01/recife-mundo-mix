@@ -37,13 +37,14 @@
             <a class="nav-link fw-semibold text-white" style="font-size: 0.9em;" href="#eixos">POLOS CULTURAIS</a>
           </li>
    <li class="nav-item dropdown custom-dropdown">
-  <a class="nav-link fw-semibold text-white dropdown-toggle conexoes-toggle" href="#" style="font-size: 0.9em;">
+  <a class="nav-link fw-semibold text-white dropdown-toggle conexoes-toggle" href="#" role="button" aria-expanded="false" style="font-size: 0.9em;">
     CONEXÕES
   </a>
   <ul class="dropdown-menu bg-black border-0 shadow text-center">
     <li><a class="dropdown-item text-white" href="#acao1">Ação 1</a></li>
   </ul>
 </li>
+
 
 
           <li class="nav-item">
@@ -559,30 +560,42 @@
   <!-- JS -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".conexoes-toggle");
-    const dropdown = toggle.closest(".custom-dropdown");
-    const navbarCollapse = document.getElementById("navbarNav");
+    const navbar = document.getElementById("navbarNav");
+    const conexaoToggle = document.querySelector(".conexoes-toggle");
+    const conexaoDropdown = conexaoToggle.closest(".custom-dropdown");
 
-    toggle.addEventListener("click", function (e) {
+    conexaoToggle.addEventListener("click", function (e) {
       if (window.innerWidth < 992) {
-        e.preventDefault(); // Evita navegação
-        e.stopPropagation(); // Impede o fechamento do navbar
+        e.preventDefault();
+        e.stopPropagation();
 
-        // Fecha qualquer outro submenu aberto
-        document.querySelectorAll(".custom-dropdown").forEach(item => {
-          if (item !== dropdown) item.classList.remove("show");
+        // Fecha todos os outros dropdowns
+        document.querySelectorAll(".custom-dropdown").forEach(drop => {
+          if (drop !== conexaoDropdown) {
+            drop.classList.remove("show");
+          }
         });
 
-        // Toggle da classe para abrir submenu
-        dropdown.classList.toggle("show");
+        // Alterna o submenu conexões
+        conexaoDropdown.classList.toggle("show");
       }
     });
 
-    // Fecha o submenu se clicar fora
+    // Fecha o submenu ao clicar fora
     document.addEventListener("click", function (e) {
-      if (!dropdown.contains(e.target)) {
-        dropdown.classList.remove("show");
+      if (window.innerWidth < 992 && !conexaoDropdown.contains(e.target)) {
+        conexaoDropdown.classList.remove("show");
       }
+    });
+
+    // Fecha o submenu ao clicar em um link do dropdown
+    conexaoDropdown.querySelectorAll(".dropdown-item").forEach(link => {
+      link.addEventListener("click", function () {
+        conexaoDropdown.classList.remove("show");
+        // Fecha o menu principal também
+        const bsCollapse = bootstrap.Collapse.getInstance(navbar);
+        if (bsCollapse) bsCollapse.hide();
+      });
     });
   });
 </script>
