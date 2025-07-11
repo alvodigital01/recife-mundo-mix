@@ -36,9 +36,17 @@
           <li class="nav-item">
             <a class="nav-link fw-semibold text-white" style="font-size: 0.9em;" href="#eixos">POLOS CULTURAIS</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link fw-semibold text-white" style="font-size: 0.9em;" href="">CONEXÕES</a>
-          </li>
+          <li class="nav-item dropdown custom-dropdown">
+  <a class="nav-link fw-semibold text-white dropdown-toggle" href="#" id="conexoesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 0.9em;">
+    CONEXÕES
+  </a>
+  <ul class="dropdown-menu bg-black border-0 shadow" aria-labelledby="conexoesDropdown">
+    <li><a class="dropdown-item text-white" href="#acao1">Ação 1</a></li>
+    <li><a class="dropdown-item text-white" href="#acao2">Ação 2</a></li>
+    <li><a class="dropdown-item text-white" href="#acao3">Ação 3</a></li>
+  </ul>
+</li>
+
           <li class="nav-item">
             <a class="nav-link fw-semibold text-white" style="font-size: 0.9em;" href="#quer-participar">OFICINAS E PALESTRAS</a>
           </li>
@@ -550,6 +558,33 @@
 
 
   <!-- JS -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const isMobile = window.innerWidth < 992;
+    const dropdownToggle = document.getElementById('conexoesDropdown');
+    const dropdownItem = dropdownToggle.closest('.custom-dropdown');
+    const navbarCollapse = document.getElementById('navbarNav');
+
+    if (isMobile) {
+      dropdownToggle.addEventListener('click', function (e) {
+        // Impede o menu de fechar
+        e.preventDefault();
+        e.stopPropagation(); // Impede que o clique feche o navbar
+
+        // Alterna visibilidade do submenu
+        dropdownItem.classList.toggle('show');
+      });
+
+      // Evita que cliques no submenu fechem o menu todo
+      const submenu = dropdownItem.querySelector('.dropdown-menu');
+      submenu.addEventListener('click', function (e) {
+        e.stopPropagation();
+      });
+    }
+  });
+</script>
+
+
  <!-- SCRIPTS REQUERIDOS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>

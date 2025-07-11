@@ -138,6 +138,93 @@ html {
   width: 80%;
 }
 
+/* Submenu CONEXÕES - AÇÕES */
+.custom-dropdown {
+  position: relative;
+}
+
+.custom-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  background-color: black;
+  border-radius: 0.5rem;
+  margin-top: 0.2rem;
+  min-width: 180px;
+}
+
+/* Hover para desktop */
+@media (min-width: 992px) {
+  .custom-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Corrige sumiço ao mover o mouse para submenu */
+.custom-dropdown .dropdown-menu:hover {
+  display: block;
+}
+
+/* Mobile: mostra com clique */
+@media (max-width: 991.98px) {
+  .custom-dropdown .dropdown-menu {
+    position: static;
+    display: none;
+  }
+
+  .custom-dropdown.show .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Estilo dos itens */
+.dropdown-menu .dropdown-item {
+  font-size: 0.9em;
+  padding: 0.5rem 1rem;
+  transition: background 0.2s;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #00FB33;
+  color: black !important;
+}
+
+.custom-dropdown {
+  position: relative;
+}
+
+.custom-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  background-color: black;
+  border-radius: 0.5rem;
+  margin-top: 0.2rem;
+  min-width: 180px;
+}
+
+/* DESKTOP: Hover mostra submenu */
+@media (min-width: 992px) {
+  .custom-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* MOBILE: Mostrar com classe .show adicionada via JS */
+@media (max-width: 991.98px) {
+  .custom-dropdown .dropdown-menu {
+    position: static;
+    display: none;
+  }
+
+  .custom-dropdown.show .dropdown-menu {
+    display: block;
+  }
+}
 
 /* ------------------------------------
   HERO (imagem + vídeo + logo animada)
