@@ -15,6 +15,30 @@
 
 
 </head>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const titulo = document.getElementById('titulo-principal');
+    const subtitulo = document.getElementById('subtitulo-verde');
+    const lista = document.getElementById('lista-atividades');
+
+    // Animação do título (direita -> esquerda)
+    titulo.style.opacity = '1';
+    titulo.style.transform = 'translateX(0)';
+
+    // Subtítulo (esquerda -> direita)
+    setTimeout(() => {
+      subtitulo.style.opacity = '1';
+      subtitulo.style.transform = 'translateX(0)';
+    }, 400);
+
+    // Lista de atividades (direita -> esquerda)
+    setTimeout(() => {
+      lista.style.opacity = '1';
+      lista.style.transform = 'translateX(0)';
+    }, 800);
+  });
+</script>
+
 <body id="contador">
   
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top custom-navbar">
@@ -80,16 +104,16 @@
 <section id="programacao" style="background-color: #000; color: white; padding: 80px 20px;">
   <div class="container">
     <!-- Título principal da seção -->
-    <h2 class="text-center fw-bold mb-4" style="color: #ff2e94;">
+    <h2 class="text-center fw-bold mb-4" style="color: #ff2e94;" id="titulo-principal">
       A PROGRAMAÇÃO
       <br><br>
-      <strong style="color: #00FB33; font-size: 1.5rem;">
+      <strong style="color: #00FB33; font-size: 1.5rem;" id="subtitulo-verde">
         O Recife Mundo Mix prevê as seguintes Atividades Culturais em sua programação:
       </strong>
     </h2>
 
     <!-- Lista de atividades principais -->
-    <ul style="max-width: 800px; margin: 0 auto 60px; font-size: 1.1rem; line-height: 1.7;">
+    <ul style="max-width: 800px; margin: 0 auto 60px; font-size: 1.1rem; line-height: 1.7;" id="lista-atividades">
       <li>Debates e seminários sobre temas sociais, culturais e de empreendedorismo</li>
       <li>Mostras de dança, teatro e cortejos de cultura popular</li>
       <li>Oficinas e workshops de arte, cultura e cidadania</li>
@@ -203,6 +227,32 @@
 </script>
 
 
+<script>
+  // Ativa animação de entrada suave ao rolar a página
+  window.addEventListener('scroll', () => {
+    const elements = document.querySelectorAll('.col');
+
+    elements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      if (rect.top < windowHeight - 100) {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+        el.style.transition = 'all 0.8s ease';
+      }
+    });
+  });
+
+  // Define estado inicial via JS (caso queira garantir)
+  window.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('.col');
+    elements.forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(40px)';
+    });
+  });
+</script>
 
 
 
