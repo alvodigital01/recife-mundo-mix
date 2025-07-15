@@ -1,28 +1,66 @@
-body {
-    background-color: rgb(0, 0, 0);
-      font-family: Arial, sans-serif;
-    }
+  .imagem-fullscreen {
+    background-image: url('imagens/imagemheropolos.PNG'); /* seu caminho */
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+  }
 
-    /* Animações */
-    .animate-fade-right {
-      opacity: 0;
-      transform: translateX(50px);
-      transition: all 0.8s ease;
-    }
 
-    .animate-fade-left {
-      opacity: 0;
-      transform: translateX(-50px);
-      transition: all 0.8s ease;
-    }
 
-    .animate-fade-up {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 0.8s ease;
-    }
+   .programacao-section {
+    padding: 60px 20px;
+    color: white;
+    position: relative;
+  }
 
-    .animate-show {
-      opacity: 1 !important;
-      transform: translate(0) !important;
-    }
+  .programacao-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #74F759;
+    margin-bottom: 10px;
+  }
+
+  .programacao-section .subtitulo {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+
+  .programacao-section .subtitulo strong {
+    color: #74F759;
+  }
+
+  .bloco-rosa {
+    background-color: #EF3BA9;
+    padding: 30px 40px;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    max-width: 900px;
+  }
+
+  .bloco-rosa ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .bloco-rosa ul li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+  }
+
+  .bloco-rosa ul li::before {
+    content: "–";
+    margin-right: 10px;
+    color: white;
+  }
+
+  .programacao-section .observacao {
+    font-size: 1.1rem;
+    max-width: 900px;
+    color: white;
+  }
