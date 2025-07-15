@@ -247,7 +247,7 @@ html {
 /* 📱 Ajuste para mobile: logo maior */
 @media (max-width: 768px) {
   .hero-logo {
-    width: 85vw !important;     /* força a largura total */
+    width: 95vw !important;     /* força a largura total */
     height: auto !important;
     max-width: 100% !important;
     margin: 0 auto;
