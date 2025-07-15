@@ -7,11 +7,12 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: #1d3208;
 }
 
 html, body {
   height: auto; /* ou remova 'height: 100%' */
-  background-color: #000; /* se quiser fundo contínuo */
+  background-color: #1d3208; /* se quiser fundo contínuo */
 }
 
 body {
@@ -395,7 +396,7 @@ html {
   SEÇÃO EIXOS DA EXPERIÊNCIA
 ------------------------------------- */
 .eixos-section, .contador-section {
-  background-color: #000;
+  background-color: #1d3208;
   color: white;
   padding: 80px 20px;
   position: relative;
