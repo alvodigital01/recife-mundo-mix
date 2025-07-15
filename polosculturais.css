@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(0, 0, 0);
+      font-family: Arial, sans-serif;
+    }
+
+    /* Animações */
+    .animate-fade-right {
+      opacity: 0;
+      transform: translateX(50px);
+      transition: all 0.8s ease;
+    }
+
+    .animate-fade-left {
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: all 0.8s ease;
+    }
+
+    .animate-fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+
+    .animate-show {
+      opacity: 1 !important;
+      transform: translate(0) !important;
+    }
