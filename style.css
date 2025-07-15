@@ -7,12 +7,12 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #1d3208;
+  background-color: #102d07;
 }
 
 html, body {
   height: auto; /* ou remova 'height: 100%' */
-  background-color: #1d3208; /* se quiser fundo contínuo */
+  background-color: 102d07; /* se quiser fundo contínuo */
 }
 
 body {
@@ -339,7 +339,6 @@ html {
 ------------------------------------- */
 #depoimentos, #projecoes, #movimentos,  #localizacao, #video {
   position: relative;
-  background-color: #000;
   color: white;
   padding: 80px 20px;
   text-align: center;
@@ -396,7 +395,6 @@ html {
   SEÇÃO EIXOS DA EXPERIÊNCIA
 ------------------------------------- */
 .eixos-section, .contador-section {
-  background-color: #1d3208;
   color: white;
   padding: 80px 20px;
   position: relative;
@@ -452,7 +450,6 @@ html {
   SEÇÃO PRA QUEM É
 ------------------------------------- */
 .para-quem-section {
-  background-color: #000;
   position: relative;
   overflow: hidden;
 }
