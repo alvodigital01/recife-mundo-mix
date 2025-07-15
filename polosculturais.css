@@ -9,10 +9,11 @@
 
 
 
-   .programacao-section {
+    .programacao-section {
     padding: 60px 20px;
     color: white;
     position: relative;
+    text-align: center;
   }
 
   .programacao-section h2 {
@@ -35,8 +36,9 @@
     background-color: #EF3BA9;
     padding: 30px 40px;
     border-radius: 25px;
-    margin-bottom: 40px;
+    margin: 0 auto 40px auto;
     max-width: 900px;
+    text-align: left;
   }
 
   .bloco-rosa ul {
@@ -62,5 +64,7 @@
   .programacao-section .observacao {
     font-size: 1.1rem;
     max-width: 900px;
+    margin: 0 auto;
     color: white;
+    text-align: left;
   }
