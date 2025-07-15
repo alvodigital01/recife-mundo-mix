@@ -1,0 +1,51 @@
+ /* TEXTO VERTICAL */
+  .vertical-text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    animation: slideIn 1.5s ease-out;
+  }
+
+  .vertical-text-container span {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    white-space: nowrap;
+    font-size: 6rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-left: -160px;
+  }
+
+  .vertical-text-container span.secondary {
+    color: #843C24;
+    margin-left: -280px;
+    margin-top: 80px;
+  }
+
+  .vertical-text-container span.primary {
+    color: #74F759;
+  }
+
+  /* ANIMAÇÃO */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* RESPONSIVIDADE: ESCONDE NO MOBILE */
+  @media screen and (max-width: 768px) {
+    .vertical-text-container {
+      display: none;
+    }
+  }
