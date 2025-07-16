@@ -49,3 +49,81 @@
     max-width: 300px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sessao-carbono {
+  background-image: url('bg-floresta.jpg'); /* Substitua com o caminho da sua imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.container-carbono {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.titulo-topo {
+  color: #93BC3A;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.titulo-principal {
+  font-size: 3rem;
+  color: #73F757;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.titulo-principal span {
+  color: #73F757;
+}
+
+.verde {
+  color: #73F757;
+  font-weight: 600;
+}
+
+.verde-claro {
+  color: #73F757;
+}
+
+.sessao-carbono p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.sessao-carbono ul {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.sessao-carbono ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
