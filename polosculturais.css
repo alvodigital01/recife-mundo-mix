@@ -87,7 +87,7 @@
 .sessao-gastronomia {
   padding: 45px 20px;
   position: relative;
-  background-color: transparent; /* Altere aqui para adicionar o bg futuramente */
+  background-image: url('imagens/saboresfundo.png');  /* Altere aqui para adicionar o bg futuramente */
 }
 
 .container-gastronomia {
@@ -164,7 +164,7 @@
 
 .sessao-info-gastronomia {
   padding: 5px 20px;
-  background-color: transparent; /* aplique sua imagem depois via background-image */
+  background-image: url('imagens/saboresfundo.png'); /* aplique sua imagem depois via background-image */
   color: #000;
   font-family: 'Arial', sans-serif;
 }
