@@ -84,72 +84,154 @@
 
 
 
-  .sessao-polos {
-  background-color: #0f2507;
-  padding: 30px;
-  max-width: 1200px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  box-shadow: 0 0 10px #000;
-  border: 1px solid #263c1b;
+.sessao-gastronomia {
+  padding: 45px 20px;
+  position: relative;
+  background-color: transparent; /* Altere aqui para adicionar o bg futuramente */
 }
 
-/* Blocos de cada polo */
-.bloco-polo {
-  display: flex;
-  border: 1px solid #fff;
-  background-color: rgba(0, 0, 0, 0.2);
+.container-gastronomia {
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #000; /* Ajustável para contraste do fundo futuro */
+  font-family: 'Arial', sans-serif;
 }
 
-/* Coluna com logotipo */
-.col-logo {
-  width: 220px;
-  min-height: 110px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-right: 1px solid #fff;
-  background-color: #1a3e0b;
+.titulo-polo {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
 }
 
-.col-logo img {
+.logo-gastronomia img {
+  width: 300px;
   max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  height: auto;
+  margin: 20px 0;
 }
 
-/* Coluna central com o texto */
-.col-texto {
-  flex: 1;
-  padding: 15px;
-  border-right: 1px solid #fff;
-  color: #fff;
+.subtitulo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-.col-homenagem {
-  width: 260px;
-  padding: 15px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  font-size: 14px;
+.texto {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #000;
 }
 
-.col-texto h3 {
-  font-size: 14px;
-  text-transform: uppercase;
-  margin: 0 0 10px;
+/* Responsivo */
+@media (max-width: 768px) {
+  .titulo-polo {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .logo-gastronomia img {
+    width: 200px;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .subtitulo {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .texto {
+    font-size: 1rem;
+    text-align: justify;
+  }
 }
 
-.col-texto p,
-.col-homenagem p {
-  font-size: 14px;
-  margin: 0;
-  line-height: 1.5;
+@media (max-width: 480px) {
+  .titulo-polo {
+    font-size: 2.6rem;
+  }
+
+  .subtitulo {
+    font-size: 1rem;
+  }
+
+  .texto {
+    font-size: 0.95rem;
+  }
 }
 
-.destaque {
-  color: #4cff4c;
+
+.sessao-info-gastronomia {
+  padding: 5px 20px;
+  background-color: transparent; /* aplique sua imagem depois via background-image */
+  color: #000;
+  font-family: 'Arial', sans-serif;
+}
+
+.container-info {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.bloco-titulo {
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.bloco-titulo.verde {
+  color: #187a4c;
+}
+
+.bloco-titulo.laranja {
+  color: #d8671a;
+}
+
+.bloco-lista {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.bloco-lista li {
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.texto-final {
+  font-size: 1.1rem;
+  margin-top: 40px;
+  line-height: 1.6;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .bloco-titulo {
+    font-size: 1.1rem;
+  }
+
+  .bloco-lista li {
+    font-size: 1rem;
+  }
+
+  .texto-final {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bloco-titulo {
+    font-size: 1rem;
+  }
+
+  .bloco-lista li {
+    font-size: 0.95rem;
+  }
+
+  .texto-final {
+    font-size: 0.95rem;
+  }
 }
