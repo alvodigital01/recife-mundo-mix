@@ -169,6 +169,103 @@
 
 
 
+
+
+
+
+
+
+
+
+body {
+ 
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.polo-section-wrapper {
+  padding: 60px 20px; /* espaçamento fora da caixa escura */
+   background: url('imagens/quadriculadoverde.png') no-repeat center center ;
+}
+
+.polo-section-inner {
+  background-color: #1A2F06;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.polo-card {
+  display: flex;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+.polo-icon {
+  flex: 1;
+  background-color: #11270e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.polo-icon img {
+  max-width: 100%;
+  height: auto;
+}
+
+.polo-text {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.polo-text h4 {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+  white-space: nowrap; /* evita quebra */
+}
+
+.polo-text p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.highlight-green {
+  color: #7EE065;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .sessao-gastronomia {
   padding: 45px 20px;
   position: relative;
