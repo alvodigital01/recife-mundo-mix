@@ -74,11 +74,36 @@
 
 @media (max-width: 768px) {
   .programacao-section h2 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 }
 
 
+/* Desktop - mantém alinhado à esquerda */
+.programacao-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+/* Mobile - centraliza como estava originalmente */
+@media (max-width: 768px) {
+  .programacao-section .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .bloco-rosa {
+    text-align: left; /* mantém o bloco rosa alinhado à esquerda */
+  }
+
+  .programacao-section .observacao {
+    text-align: left; /* mantém a observação também à esquerda */
+  }
+}
 
 
 
