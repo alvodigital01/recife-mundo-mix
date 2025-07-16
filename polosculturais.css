@@ -1,11 +1,63 @@
-  .imagem-fullscreen {
-    background-image: url('imagens/imagemheropolos.PNG'); /* seu caminho */
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
+.topo-hero {
+  background-image: url('imagens/bg\ rec.png'); /* Substitua pelo caminho correto */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start; /* Alinha ao topo */
+  justify-content: center;
+  text-align: center;
+  color: #0f340a;
+  padding: 40px 20px 20px 20px; /* Espaçamento interno (top, right, bottom, left) */
+}
+
+.container-topo {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.container-topo h1 {
+  font-size: 3.8rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #0f340a;
+  margin-top: 2px; /* Posição do título */
+}
+
+.container-topo h1 strong {
+  font-weight: bold;
+}
+
+.container-topo h1 .mix {
+  color: #c7ff4a;
+}
+
+.container-topo h1 em {
+  font-style: italic;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .topo-hero {
+    height: auto;
+    padding: 60px 20px 40px 20px;
+    align-items: flex-start;
   }
+
+  .container-topo h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-topo h1 {
+    font-size: 1.6rem;
+    margin-top: 20px;
+  }
+}
 
 
 
