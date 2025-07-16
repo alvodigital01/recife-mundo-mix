@@ -17,7 +17,7 @@
   }
 
   .programacao-section h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #74F759;
     margin-bottom: 10px;
@@ -69,6 +69,14 @@
     text-align: left;
   }
 
+@media (max-width: 768px) {
+  .programacao-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #74F759;
+    margin-bottom: 10px;
+  }
+}
 
 
 
@@ -101,7 +109,7 @@
 }
 
 .titulo-polo {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 800;
   margin-bottom: 20px;
 }
@@ -235,6 +243,98 @@
   }
 
   .texto-final {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+
+
+
+.sessao-artesanato {
+  background-image: url('imagens/bg\ artesanato.png'); /* Substitua com o caminho real da imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #E0C38B;
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.container-artesanato {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.titulo-artesanato {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #E0C38B; /* cor semelhante ao título da imagem */
+  margin-bottom: 20px;
+}
+
+.logo-feirarte {
+  width: 240px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #E0C38B;
+  margin-bottom: 30px;
+}
+
+.texto {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  color: #E0C38B;
+}
+
+.homenagem {
+  font-size: 1rem;
+  color: #E0C38B;
+}
+
+.homenagem .destaque {
+  color: #E0C38B;
+  font-weight: 700;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .titulo-artesanato {
+    font-size: 2.5rem;
+  }
+
+  .subtitulo {
+    font-size: 1rem;
+  }
+
+  .texto,
+  .homenagem {
+    font-size: 1rem;
+  }
+
+  .logo-feirarte {
+    width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-artesanato {
+    font-size: 2.5rem;
+  }
+
+  .logo-feirarte {
+    width: 160px;
+  }
+
+  .texto {
     font-size: 0.95rem;
   }
 }
