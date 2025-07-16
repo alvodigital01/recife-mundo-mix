@@ -160,7 +160,7 @@
 
 @media (max-width: 480px) {
   .titulo-polo {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
 
   .subtitulo {
@@ -270,7 +270,7 @@
 
 .titulo-artesanato {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 800;
   color: #E0C38B; /* cor semelhante ao título da imagem */
   margin-bottom: 20px;
 }
