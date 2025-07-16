@@ -982,3 +982,87 @@
 .polomusicalbg > section + section {
   padding-top: 1px; /* Adiciona espaçamento apenas entre as seções internas */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.secao-polo-moda {
+  background-image: url('imagens/passa.png'); /* Substitua pelo caminho correto */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.overlay-moda {
+  padding: 60px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container-moda {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.titulo-moda {
+  color: #D82752; /* Rosa forte */
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.logo-moda {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.slogan-moda {
+  font-size: 20px;
+  font-weight: bold;
+  color: #D82752;
+  margin-bottom: 30px;
+}
+
+.descricao-moda {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+@media (max-width: 768px) {
+  .titulo-moda {
+    font-size: 24px;
+  }
+
+  .logo-moda {
+    max-width: 220px;
+  }
+
+  .slogan-moda,
+  .descricao-moda {
+    font-size: 16px;
+  }
+}
