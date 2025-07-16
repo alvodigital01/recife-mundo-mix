@@ -9,75 +9,74 @@
 
 
 
-    .programacao-section {
-    padding: 60px 20px;
-    color: white;
-    position: relative;
-    text-align: center;
-  }
+   .programacao-section {
+  padding: 60px 20px;
+  color: white;
+  position: relative;
+}
 
-  .programacao-section h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #74F759;
-    margin-bottom: 10px;
-  }
+.programacao-section .container {
+  max-width: 1060px; /* ou 1200px se preferir mais recuo */
+  margin: 0 auto;
+  padding-left: 40px;  /* alinhamento manual */
+  padding-right: 20px;
+  text-align: left;
+}
 
-  .programacao-section .subtitulo {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
+.programacao-section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #74F759;
+  margin-bottom: 10px;
+}
 
-  .programacao-section .subtitulo strong {
-    color: #74F759;
-  }
+.programacao-section .subtitulo {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
 
-  .bloco-rosa {
-    background-color: #EF3BA9;
-    padding: 30px 40px;
-    border-radius: 25px;
-    margin: 0 auto 40px auto;
-    max-width: 900px;
-    text-align: left;
-  }
+.programacao-section .subtitulo strong {
+  color: #74F759;
+}
 
-  .bloco-rosa ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+.bloco-rosa {
+  background-color: #EF3BA9;
+  padding: 30px 40px;
+  border-radius: 25px;
+  margin-bottom: 40px;
+  text-align: left;
+}
 
-  .bloco-rosa ul li {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    font-weight: bold;
-    color: white;
-    position: relative;
-  }
+.bloco-rosa ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-  .bloco-rosa ul li::before {
-    content: "–";
-    margin-right: 10px;
-    color: white;
-  }
+.bloco-rosa ul li {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+}
 
-  .programacao-section .observacao {
-    font-size: 1.1rem;
-    max-width: 900px;
-    margin: 0 auto;
-    color: white;
-    text-align: left;
-  }
+.bloco-rosa ul li::before {
+  content: "–";
+  margin-right: 10px;
+  color: white;
+}
+
+.programacao-section .observacao {
+  font-size: 1.1rem;
+  color: white;
+}
 
 @media (max-width: 768px) {
   .programacao-section h2 {
     font-size: 2.5rem;
-    font-weight: bold;
-    color: #74F759;
-    margin-bottom: 10px;
   }
 }
-
 
 
 
@@ -397,7 +396,7 @@
 .texto-final-artesanato {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: ##E1C587;
+  color: #E1C587;
   margin-top: 40px;
 }
 
