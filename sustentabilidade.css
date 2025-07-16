@@ -1,0 +1,51 @@
+.hero-carbono {
+  background-image: url('imagens/bg2\ \(1\).png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* preenche 100% da tela */
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero-text-box {
+  background-color: #000;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+}
+
+.hero-text-box h1 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.hero-text-box .verde {
+  color: #76F659;
+  font-style: normal;
+}
+
+.hero-images .img-hero {
+  max-width:500px;
+  height: auto;
+}
+
+/* Responsivo */
+@media (max-width: 576px) {
+  .hero-text-box h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-images .img-hero {
+    max-width: 300px;
+  }
+}
