@@ -505,3 +505,229 @@
     font-size: 0.95rem;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.empreender-section {
+      background-image: url('imagens/bg\ empreendedoristmo.png');
+      color: white;
+      padding: 80px 20px;
+      position: relative;
+    }
+
+    .empreender-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .empreender-content h2 {
+      color: #F3C139;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      font-weight: 800;
+    }
+
+    .logo-empreender {
+      max-width: 280px;
+      margin-bottom: 30px;
+      display: block;
+    }
+
+    .empreender-content h3 {
+      font-size: 20px;
+      color: #F3C139;
+      margin-bottom: 40px;
+      font-weight: normal;
+    }
+
+    .empreender-content p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: white;
+      margin-bottom: 30px;
+    }
+
+    .empreender-content .destaque {
+      color: #F3C139;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #F3C139;
+      display: inline-block;
+    }
+
+    @media (max-width: 768px) {
+      .empreender-section {
+        padding: 60px 15px;
+      }
+
+      .empreender-content h2 {
+        font-size: 22px;
+      }
+
+      .logo-empreender {
+        max-width: 200px;
+      }
+
+      .empreender-content p {
+        font-size: 15px;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .secao-empreenda {
+  background-image: url('imagens/bg\ empreendedoristmo.png');
+  color: white;
+  padding: 60px 20px;
+}
+
+.container-empreenda {
+  max-width: 995px; /* igual à parte de cima da imagem */
+  margin: 0 auto;
+}
+
+.titulo-topico {
+  color: #ffc107;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 550;
+}
+
+.lista-topicos {
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.lista-topicos li {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 4px 0;
+}
+
+.descricao-final {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.descricao-final strong {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .secao-empreenda {
+    padding: 40px 15px;
+  }
+
+  .lista-topicos li,
+  .descricao-final {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.secao-bemviver {
+  background-image: url('imagens/bemvivier.png');
+  padding: 60px 20px;
+  color: #ffffff;
+}
+
+.container-bemviver {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.titulo-bemviver {
+  color: #C6F240;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.logo-bemviver {
+  max-width: 220px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.slogan {
+  color: #C6F240;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.descricao {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.descricao strong {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .titulo-bemviver {
+    font-size: 24px;
+  }
+
+  .slogan,
+  .descricao {
+    font-size: 16px;
+  }
+
+  .logo-bemviver {
+    max-width: 160px;
+  }
+}
