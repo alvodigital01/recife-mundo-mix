@@ -1084,9 +1084,11 @@
 
 
 
-
+.bgacao{
+   background: url('imagens/quadriculadoverde.png')  center center;
+}
 .acoes-culturais {
-  background: url('sua-imagem-de-fundo.jpg') no-repeat center center;
+
   background-size: cover;
   color: white;
   padding: 60px 20px;
