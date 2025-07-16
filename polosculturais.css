@@ -68,3 +68,88 @@
     color: white;
     text-align: left;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .sessao-polos {
+  background-color: #0f2507;
+  padding: 30px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 0 10px #000;
+  border: 1px solid #263c1b;
+}
+
+/* Blocos de cada polo */
+.bloco-polo {
+  display: flex;
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Coluna com logotipo */
+.col-logo {
+  width: 220px;
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #fff;
+  background-color: #1a3e0b;
+}
+
+.col-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Coluna central com o texto */
+.col-texto {
+  flex: 1;
+  padding: 15px;
+  border-right: 1px solid #fff;
+  color: #fff;
+}
+
+.col-homenagem {
+  width: 260px;
+  padding: 15px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.col-texto h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.col-texto p,
+.col-homenagem p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.destaque {
+  color: #4cff4c;
+}
