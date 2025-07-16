@@ -329,7 +329,7 @@
 
 
 .sessao-artesanato {
-  background-image: url('imagens/bg\ artesanato.png'); /* Substitua com o caminho real da imagem */
+  background-image: url('imagens/novo\ arte.png'); /* Substitua com o caminho real da imagem */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -352,7 +352,7 @@
 }
 
 .logo-feirarte {
-  width: 240px;
+  width: 400px;
   height: auto;
   margin-bottom: 20px;
 }
@@ -397,7 +397,7 @@
   }
 
   .logo-feirarte {
-    width: 180px;
+    width: 250px;
   }
 }
 
@@ -407,7 +407,7 @@
   }
 
   .logo-feirarte {
-    width: 160px;
+    width: 250px;
   }
 
   .texto {
