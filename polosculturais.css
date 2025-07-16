@@ -1167,3 +1167,62 @@
   font-weight: bold;
   color:#75F956;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.acessibilidade {
+  background: url('imagens/cadeira.png') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+#TITLEE{
+  font-size: 2rem;
+  color: #8FBF36;
+}
+
+.h2acessibilidade{
+color:#75F554;
+font-size: 2rem;
+
+}
+.subtituloacesso{
+  color: #75F554;
+}
+.acessibilidade-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.acessibilidade .verde {
+  color: #7fff4c;
+}
+
+.acessibilidade .azul {
+  color: #3ABEFF;
+}
+
+.acessibilidade .amarelo {
+  color: #FFD700;
+}
+
+.acessibilidade .vermelho {
+  color: #FF4C4C;
+}
+
+.acessibilidade i {
+  font-size: 1.4rem;
+  vertical-align: middle;
+}
