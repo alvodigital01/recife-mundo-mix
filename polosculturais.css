@@ -1187,16 +1187,29 @@
   color: #fff;
   font-family: 'Arial', sans-serif;
 }
-#TITLEE{
-  font-size: 2rem;
+#TITLEE,
+.h2acessibilidade {
+  font-size: 3rem;
+  white-space: nowrap;         /* Não permite quebra */
+  overflow: hidden;
+ 
+}
+
+#TITLEE {
   color: #8FBF36;
 }
 
-.h2acessibilidade{
-color:#75F554;
-font-size: 2rem;
-
+.h2acessibilidade {
+  color: #75F554;
 }
+#TITLEE,
+.h2acessibilidade {
+  font-size: 3rem;
+  white-space: nowrap;       /* NÃO quebra a linha */
+  overflow: visible;         /* Permite o texto transbordar, se necessário */
+  text-overflow: unset;      /* Não coloca os "..." */
+}
+
 .subtituloacesso{
   color: #75F554;
 }
@@ -1225,4 +1238,32 @@ font-size: 2rem;
 .acessibilidade i {
   font-size: 1.4rem;
   vertical-align: middle;
+}
+
+
+@media (max-width: 768px) {
+  #TITLEE,
+  .h2acessibilidade {
+    font-size: 1.8rem; /* Reduz para telas menores */
+    white-space: normal; /* Permite quebra em telas pequenas */
+    text-overflow: unset;
+  }
+
+  .acessibilidade-container {
+    flex-direction: column !important;
+    align-items: start !important;
+    padding: 0 20px;
+  }
+
+  .acessibilidade .col-md-7 {
+    width: 100%;
+  }
+
+  .acessibilidade i {
+    font-size: 1.2rem;
+  }
+
+  .subtituloacesso {
+    font-size: 1.1rem;
+  }
 }
