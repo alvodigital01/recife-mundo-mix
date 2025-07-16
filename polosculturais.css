@@ -121,17 +121,17 @@
   margin: 20px 0;
 }
 
-.subtitulo {
+.subtitulo11 {
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.texto {
+.texto11 {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 20px;
-  color: #000;
+  color: #000000;
 }
 
 /* Responsivo */
