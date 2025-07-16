@@ -1066,3 +1066,104 @@
     font-size: 16px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.acoes-culturais {
+  background: url('sua-imagem-de-fundo.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.acoes-culturais .container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.acoes-culturais h2 {
+  font-size: 3rem;
+  color: #5ADDDF;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+#h2acoes{
+  font-size: 3rem;
+  color: #75F956;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.acoes-culturais h2 span {
+  color: #00d9ff;
+  font-weight: bold;
+}
+
+.acoes-culturais .intro {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.acoes-culturais .intro.bold {
+  font-weight: bold;
+}
+
+.acoes-culturais .verde {
+  color: #75F956;
+}
+
+.acoes-culturais .tabela {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin: 30px 0;
+}
+
+.acoes-culturais .linha {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.133);
+  border-bottom: 1px solid white;
+}
+
+.acoes-culturais .coluna {
+  flex: 1;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.acoes-culturais .coluna.titulo {
+  font-weight: bold;
+    text-shadow: none !important;
+  color: #75F956;
+  
+  white-space: nowrap;
+  min-width: 200px;
+}
+
+.acoes-culturais .final {
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.acoes-culturais .final .verde {
+  font-weight: bold;
+  color:#75F956;
+}
