@@ -127,3 +127,106 @@
   margin-bottom: 10px;
   line-height: 1.6;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sessao-certificacao {
+  background-image: url('bg-certificacao.png'); /* Substitua pelo nome real da imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.container-certificacao {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.subtitulo {
+  color: #c7f246;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.titulo {
+  font-size: 2rem;
+  color: #6fff4a;
+  font-weight: bold;
+  margin-bottom: 30px;
+  max-width: 700px;
+}
+
+.destaque {
+  color: #6eff6b;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.sessao-certificacao p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 900px;
+}
+
+.selos {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.selos img {
+  max-height: 90px;
+  height: auto;
+  width: auto;
+  align-items: center;
+}
+
+.selo-centro {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.selo-centro img {
+  max-height: 170px;
+  height: auto;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .selo-centro {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.selo-centro img {
+  max-height: 140px;
+  height: auto;
+  width: auto;
+}
+}
