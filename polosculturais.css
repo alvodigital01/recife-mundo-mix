@@ -338,3 +338,94 @@
     font-size: 0.95rem;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sessao-artesanato-info {
+  background-image: url('imagens/bg\ arte\ novo.png'); /* Substitua pelo caminho da imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: #E1C587;
+  font-family: 'Arial', sans-serif;
+}
+
+.container-artesanato-info {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.bloco {
+  margin-bottom: 30px;
+}
+
+.titulo-destaque {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #E1C587;
+  margin-bottom: 10px;
+}
+
+.bloco ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bloco ul li {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.texto-final-artesanato {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: ##E1C587;
+  margin-top: 40px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .titulo-destaque {
+    font-size: 1.1rem;
+  }
+
+  .bloco ul li {
+    font-size: 1rem;
+  }
+
+  .texto-final-artesanato {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-destaque {
+    font-size: 1rem;
+  }
+
+  .bloco ul li {
+    font-size: 0.95rem;
+  }
+
+  .texto-final-artesanato {
+    font-size: 0.95rem;
+  }
+}
