@@ -48,6 +48,109 @@ html {
   color: #000 !important;
 }
 
+
+
+.festival-section {
+  background-image: url('imagens/quadriculadoverde.png');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  color: white;
+  text-align: left;
+  font-family: 'Arial Black', sans-serif;
+}
+
+.festival-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.festival-content h2 {
+  font-size: 4.5rem;
+  line-height: 1; /* mais colado */
+  margin: 0 0 1.8rem 0; /* margem inferior só para respirar da data */
+  text-transform: uppercase;
+}
+
+.festival-content .ofestivalt {
+  color: #77F65B;
+  font-weight: 300; /* fino */
+}
+
+.festival-content .mais {
+  color: #EB6A2F;
+  font-weight: 300; /* fino igual O FESTIVAL */
+  margin-right: 0.4rem;
+}
+
+.festival-content .cultural {
+  color: #96ff61;
+  font-weight: 900;
+}
+
+.festival-content .nordeste {
+  color: #57DEDF;
+  font-weight: 900;
+  display: inline-block;
+  margin-top: 0.1rem;
+}
+
+.festival-content .data {
+  margin-top: 5rem;
+  font-size: 4.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.festival-content .data .dia {
+  color: #96ff61;
+}
+
+.festival-content .data .a {
+  color: #EB6A2F;
+  margin: 0 0.2rem;
+}
+
+.festival-content .data .de {
+  color: #77F65B;
+  margin-left: 0.2rem;
+}
+
+.festival-content .data .mes {
+  color: #57DEDF;
+  display: block;
+  margin-top: 0.3rem;
+}
+
+.festival-content .data .ano {
+  color: #57DEDF;
+  display: block;
+  margin-top: 0.2rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .festival-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .festival-content .data {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .festival-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .festival-content .data {
+    font-size: 1.4rem;
+  }
+}
+
+
 /* NAVBAR */
 .custom-navbar {
   background-color:#1d3208;
