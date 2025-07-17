@@ -370,7 +370,7 @@ body {
 @media (max-width: 768px) {
   .titulo-polo1 {
     font-size: 2rem;
-    text-align: center;
+    
   }
 
   .logo-gastronomia img {
@@ -403,6 +403,19 @@ body {
     font-size: 0.95rem;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .sessao-info-gastronomia {
@@ -478,6 +491,23 @@ body {
     font-size: 0.95rem;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
