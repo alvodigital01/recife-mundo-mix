@@ -535,6 +535,10 @@ border-bottom: 2px solid #73f759;
   z-index: 1;
 }
 
+/* Ajuste específico para a logo do Feirarte */
+.logofeirarte {
+  margin-top: 35px;
+}
 
 
 .glass-card, .contador-glass {
