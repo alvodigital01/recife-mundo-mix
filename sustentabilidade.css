@@ -24,7 +24,7 @@
 }
 
 .hero-text-box h1 {
-  font-size: 2.5rem;
+  font-size: 5rem;
   line-height: 1.4;
   margin: 0;
 }
@@ -35,18 +35,18 @@
 }
 
 .hero-images .img-hero {
-  max-width:500px;
+  max-width:700px;
   height: auto;
 }
 
 /* Responsivo */
 @media (max-width: 576px) {
   .hero-text-box h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .hero-images .img-hero {
-    max-width: 300px;
+    max-width: 400px;
   }
 }
 
