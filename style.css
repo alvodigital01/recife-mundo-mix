@@ -606,7 +606,7 @@ html {
   flex-direction: column;
   align-items: center;
   min-width: 80px;
-  color: white;
+  color: #102D07;
   height: 50%;
 }
 
@@ -619,7 +619,7 @@ html {
 .tempo p {
   margin-top: 4px;
   font-size: 0.9rem;
-  color: white;
+  color: #102D07;
 }
 
 /* Para desktop, une todos os tempos em uma única linha */
