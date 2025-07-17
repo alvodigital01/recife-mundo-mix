@@ -136,7 +136,9 @@ html {
   min-width: 180px;
   text-align: center;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #1b2a0c; /* ← adicionado */
 }
+
 
 .dropdown-menu li a {
   display: block;
@@ -176,13 +178,17 @@ html {
     display: flex;
   }
 
-  .dropdown .dropdown-menu {
-    position: static;
-    box-shadow: none;
-    background-color: #73f759;
-    display: none;
-    width: 100%;
-  }
+ .dropdown .dropdown-menu {
+  position: relative;
+  background-color: #73f759;
+  display: none;
+  width: 100%;
+  border: 2px solid #1b2a0c;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+}
 
   .dropdown.open .dropdown-menu {
     display: block;
