@@ -495,7 +495,7 @@ html {
 
 /* Ajuste para logos nos cards */
 .logo-img {
-  max-width: 200px;
+  max-width: 330px;
   height: auto;
   display: block;
   margin-left: auto;
@@ -504,13 +504,13 @@ html {
 
 @media (max-width: 768px) {
   .logo-img {
-    max-width: 220px;
+    max-width: 300px;
   }
 }
 
 @media (max-width: 480px) {
   .logo-img {
-    max-width: 220px;
+    max-width: 300px;
   }
 }
 /* ------------------------------------
