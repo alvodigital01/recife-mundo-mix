@@ -153,11 +153,12 @@ html {
 
 /* NAVBAR */
 .custom-navbar {
-  background-color:#1d3208;
+  background-color:#102D07;
   position: sticky;
   top: 0;
   z-index: 1000;
   padding: 1.3rem 1rem;
+border-bottom: 2px solid #73f759;
 }
 
 .nav-container {
