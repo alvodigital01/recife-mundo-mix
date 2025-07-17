@@ -640,6 +640,12 @@ html {
   width: auto;
 }
 
+.footer-logo-extra1 {
+  max-height: 170px;
+  height: auto;
+  width: auto;
+  padding: 0;
+}
 /* Esconde elementos específicos por padrão */
 .mobile-only {
   display: none;
