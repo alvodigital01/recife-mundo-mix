@@ -572,6 +572,9 @@ body {
   .titulo-artesanato {
     font-size: 2.5rem;
   }
+  #brarte{
+    display: none;
+  }
 
   .subtitulo {
     font-size: 1rem;
@@ -598,6 +601,9 @@ body {
 
   .texto {
     font-size: 0.95rem;
+  }
+  #brarte{
+    display: none;
   }
 }
 
@@ -762,7 +768,7 @@ body {
       }
 
       .empreender-content h2 {
-        font-size: 22px;
+        font-size: 1.9rem;
       }
 
       .logo-empreender {
@@ -905,7 +911,7 @@ body {
 
 @media (max-width: 768px) {
   .titulo-bemviver {
-    font-size: 24px;
+    font-size: 2rem;
   }
 
   .slogan,
@@ -1240,7 +1246,7 @@ body {
 
 @media (max-width: 768px) {
   .titulo-moda {
-    font-size: 24px;
+    font-size: 2rem;
   }
 
   .logo-moda {
