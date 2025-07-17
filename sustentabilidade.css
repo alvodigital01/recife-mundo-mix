@@ -132,6 +132,17 @@
 
 
 
+@media (max-width: 768px) {
+  .titulo-topo {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .titulo-principal {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
 
 
 
