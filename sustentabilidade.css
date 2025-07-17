@@ -71,13 +71,15 @@
 
 
 
-.sessao-carbono {
-  background-image: url('bg-floresta.jpg'); /* Substitua com o caminho da sua imagem */
+.sessao-carbono {  /* Substitua com o caminho da sua imagem */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 60px 20px;
   color: #fff;
+}
+.bgc02{
+     background-image: url('imagens/bgc02.png'); 
 }
 
 .container-carbono {
@@ -151,7 +153,7 @@
 
 
 .sessao-certificacao {
-  background-image: url('bg-certificacao.png'); /* Substitua pelo nome real da imagem de fundo */
+ /* Substitua pelo nome real da imagem de fundo */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
