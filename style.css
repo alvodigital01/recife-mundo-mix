@@ -438,7 +438,7 @@ html {
 }
 
 /* ------------------------------------
-  SEÇÃO EIXOS DA EXPERIÊNCIA
+  SEÇÃO polos
 ------------------------------------- */
 .eixos-section, .contador-section {
   color: white;
@@ -492,6 +492,27 @@ html {
   transform: translateY(-5px);
 }
 
+
+/* Ajuste para logos nos cards */
+.logo-img {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-img {
+    max-width: 220px;
+  }
+}
 /* ------------------------------------
   SEÇÃO PRA QUEM É
 ------------------------------------- */
