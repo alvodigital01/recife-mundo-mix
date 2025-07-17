@@ -204,7 +204,7 @@ html {
 
 .nav-menu a {
   text-decoration: none;
-  color: white;
+  color: #00FB33;
   font-weight: 600;
   font-size: 1.1em;
   padding: 0.4rem 0.8rem;
@@ -215,7 +215,7 @@ html {
 }
 
 .nav-menu a:hover {
-  color: white;
+  color: #00fb32c3;
   text-shadow: 0 0 5px #73f759;
 }
 
