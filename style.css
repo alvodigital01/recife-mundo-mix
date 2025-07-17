@@ -90,7 +90,7 @@ html {
 
 @media (max-width: 991.98px) {
   .custom-collapse {
-    background-color: black;
+    background-color: #73F759;
     padding: 1rem 0;
     margin-top: 56px;
     z-index: 100;
@@ -142,7 +142,7 @@ html {
 
 .custom-dropdown .dropdown-menu {
   display: none;
-  background-color: black;
+  background-color: #73F759;
   border-radius: 0.5rem;
   min-width: 180px;
   text-align: center;
@@ -161,8 +161,8 @@ html {
 }
 
 .dropdown-menu .dropdown-item:hover {
-  background-color: #00FB33;
-  color: black !important;
+  background-color: #1b2a0c;
+  color: white !important;
 }
 
 /* Hover desktop */
