@@ -322,6 +322,13 @@ html {
     transform: rotate(180deg); /* gira a seta pra cima */
   }
 }
+.menu-toggle {
+  font-size: 1.6rem; /* menor símbolo ☰ */
+  padding: 0.2rem 0.4rem; /* menos espaço ao redor */
+  border-radius: 4px; /* cantos um pouco mais retos */
+  background-color: #73f75975; /* pode ajustar ou tirar */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15); /* sombra mais leve */
+}
 
 /* ------------------------------------
   HERO (imagem + vídeo + logo animada)
