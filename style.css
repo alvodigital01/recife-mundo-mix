@@ -518,6 +518,11 @@ html {
   }
 }
 
+.contador-glass {
+  background-color: #59ddde !important; /* Cor sólida */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* opcional: adiciona profundidade */
+}
 
 
 /* ------------------------------------
