@@ -17,57 +17,35 @@
 </head>
 <body id="contador">
   
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top custom-navbar">
-    <div class="container justify-content-center position-relative">
-  
-      <!-- Botão Hamburguer com fundo rosa claro -->
-      <button class="navbar-toggler custom-toggler position-absolute end-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <!-- Itens do menu -->
-      <div class="collapse navbar-collapse justify-content-center custom-collapse" id="navbarNav">
-        <ul class="navbar-nav text-center gap-lg-4">
-          <li class="nav-item">
-            <a class="nav-link fw-semibold text-white" style="font-size: 0.9em;" href="index.html">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-semibold text-white" style="font-size: 0.9em;" href="ofestival.html">O FESTIVAL</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-semibold text-white" style="font-size: 0.9em;" href="polosculturais.html">POLOS CULTURAIS</a>
-          </li>
-   <li class="nav-item dropdown custom-dropdown">
-  <a class="nav-link fw-semibold text-white dropdown-toggle conexoes-toggle" href="#" role="button" aria-expanded="false" style="font-size: 0.9em;">
-    CONEXÕES
+ <nav class="custom-navbar">
+  <div class="nav-container">
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+      ☰
+    </button>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="ofestival.html">O FESTIVAL</a></li>
+      <li><a href="polosculturais.html">POLOS CULTURAIS</a></li>
+
+    <li class="dropdown">
+  <a href="#" class="dropdown-toggle">
+    CONEXÕES <span class="arrow">&#9662;</span> <!-- Seta para baixo -->
   </a>
-  <ul class="dropdown-menu bg-black border-0 shadow text-center">
-    <li><a class="dropdown-item text-white" href="açõesculturais.html">Ações</a></li>
-    <li><a class="dropdown-item text-white" href="sustentabilidade.html
-    ">Sustentabilidade</a></li>
-    <li><a class="dropdown-item text-white" href="acessibilidade.html">Acessibilidade</a></li>
+  <ul class="dropdown-menu">
+    <li><a href="açõesculturais.html">Ações</a></li>
+    <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+    <li><a href="acessibilidade.html">Acessibilidade</a></li>
   </ul>
 </li>
 
-
-
-          <li class="nav-item">
-            <a class="nav-link fw-semibold text-white" style="font-size: 0.9em;" href="#quer-participar">OFICINAS E PALESTRAS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-semibold text-white" style="font-size: 0.9em;" href="informações.html">INFORMAÇÕES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-semibold text-white" style="font-size: 0.9em;" href="#quer-participar">SEJA PATROCINADOR</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-semibold text-white" style="font-size: 0.9em;" href="#quer-participar">INSCRIÇÕES</a>
-          </li>
-        </ul>
-      </div>
-  
-    </div>
-  </nav>
+      <li><a href="#quer-participar">OFICINAS E PALESTRAS</a></li>
+      <li><a href="informações.html">INFORMAÇÕES</a></li>
+      <li><a href="#quer-participar">SEJA PATROCINADOR</a></li>
+      <li><a href="#quer-participar">INSCRIÇÕES</a></li>
+    </ul>
+  </div>
+</nav>
   
   
   <!--hero-->
