@@ -1268,6 +1268,33 @@ body {
   color:#75F956;
 }
 
+@media (max-width: 768px) {
+  .acoes-culturais .linha {
+    flex-direction: column;
+  }
+
+  .acoes-culturais .coluna.titulo {
+    min-width: auto;
+    white-space: normal;
+    padding-bottom: 10px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .acoes-culturais .coluna {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .acoes-culturais h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #h2acoes {
+    font-size: 2rem;
+  }
+}
 
 
 
