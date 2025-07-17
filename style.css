@@ -418,24 +418,7 @@ html {
   height: 100%;
 }
 
-/* Bolhas decorativas para várias seções */
-.bubble {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(100px);
-  opacity: 0.2;
-  z-index: 0;
-}
 
-.bubble.pink    { background: #ff2e94; width: 300px; height: 300px; top: -100px; left: -120px; }
-.bubble.blue    { background: #00ffff; width: 250px; height: 250px; top: 60%; left: 10%; }
-.bubble.yellow  { background: #ffff00; width: 220px; height: 220px; top: 20%; right: -100px; }
-.bubble.purple  { background: #b832fa; width: 200px; height: 200px; bottom: -60px; right: 10%; }
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
 
 /* ------------------------------------
   SEÇÃO polos
@@ -548,6 +531,7 @@ html {
   align-items: center;
   min-width: 80px;
   color: #FF2E94;
+  height: 50%;
 }
 
 
@@ -598,6 +582,14 @@ html {
   background-color: #00FB33 !important; /* Cor sólida */
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* opcional: adiciona profundidade */
+}
+
+/* Limitar largura do contador no desktop */
+@media (min-width: 768px) {
+  .contador-glass {
+    max-width: 1080px;  /* 👉 ajuste esse valor conforme desejar */
+    margin: 0 auto;    /* centraliza horizontalmente */
+  }
 }
 
 
