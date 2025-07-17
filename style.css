@@ -366,6 +366,83 @@ border-bottom: 2px solid #73f759;
   }
 }
 
+.btn-inscricao {
+  position: relative;
+  padding: 0.5rem 1.3rem;
+  color: #102D07 !important;/* <-- AQUI está a cor do texto */
+  background-color: #00FB33;
+  font-weight: 700;
+  border-radius: 20px;
+  overflow: hidden;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+  display: inline-block;
+}
+
+
+/* borda animada */
+.btn-inscricao::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(90deg, #ffffff, #00fb33, #ffffff);
+  z-index: -1;
+  border-radius: 10px;
+  background-size: 200% 200%;
+  animation: border-run 2s linear infinite;
+}
+
+/* máscara para esconder o fundo */
+.btn-inscricao::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: #00FB33;
+  z-index: -1;
+  border-radius: 6px;
+}
+
+@keyframes border-run {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 150% 50%;
+  }
+}
+
+
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.btn-inscricao {
+  transition: transform 0.3s ease;
+  /* mantém as outras regras que já tem */
+}
+
+.btn-inscricao:hover {
+  transform: translateY(-8px);
+  color: #0b1a04 !important; /* texto mais escuro no hover */
+}
+
 /* ------------------------------------
   HERO (imagem + vídeo + logo animada)
 ------------------------------------- */
