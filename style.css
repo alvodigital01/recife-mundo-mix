@@ -1,6 +1,13 @@
 /* ------------------------------------
   GERAIS
 ------------------------------------- */
+/* Limitar largura do contador no desktop */
+@media (min-width: 768px) {
+ #video{
+  width: 900px;
+  height:auto;
+}
+}
 
 
 body {
@@ -300,6 +307,7 @@ html {
     margin: 0 auto;
     display: block;
   }
+  
 }
 
 
@@ -431,34 +439,7 @@ html {
   z-index: 1;
 }
 
-.eixos-section::before,
-.eixos-section::after,
-.contador-section::before,
-.contador-section::after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-  background: radial-gradient(circle, #ff2e94aa 0%, transparent 70%);
-  filter: blur(80px);
-  opacity: 0.2;
-  z-index: 0;
-}
 
-.eixos-section::before,
-.contador-section::before {
-  width: 300px;
-  height: 300px;
-  top: -100px;
-  left: -100px;
-}
-
-.eixos-section::after,
-.contador-section::after {
-  width: 400px;
-  height: 400px;
-  bottom: -100px;
-  right: -100px;
-}
 
 .glass-card, .contador-glass {
   background: rgba(255, 255, 255, 0.07);
