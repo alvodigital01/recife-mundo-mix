@@ -754,6 +754,73 @@ border-bottom: 2px solid #73f759;
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bgcontador{
+background-image: url('imagens/quadriculadoverde.png');
+}
+
+.titulocontador{
+  color: #00FB33;
+  font-size: 3.4rem;
+  text-transform: uppercase;
+}
+
+.text-uppercase{
+  color: #00FB33;
+}
+.datacontador{
+  color: #102D07;
+}
+.evento-section {
+ 
+  font-family: 'Montserrat', sans-serif;
+}
+
+.info-card {
+  background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
 /* ------------------------------------
   FOOTER + animações auxiliares
 ------------------------------------- */
