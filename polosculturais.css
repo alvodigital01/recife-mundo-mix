@@ -219,8 +219,181 @@
 }
 
 
+/* mosaico*/
+.descricao-mosaico {
+  color: #ff9cdb;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+.mosaico-item-metodo:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+}
+
+.mosaico-item-metodo:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+
+.secao-mosaico-metodo {
+  padding: 80px 20px;
+  color: #cccccc;
+  text-align: center;
+}
+
+.titulo-mosaico-metodo {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #8b4ce0, #d49263);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
+.mosaico-metodo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.mosaico-item-metodo {
+  position: relative;
+  background-size: cover;
+  background-position: l;
+  height: 350px;
+  transition: all 0.4s ease;
+  opacity:1;
+}
+
+.mosaico-item-metodo:hover {
+  transform: scale(1.02);
+  z-index: 2;
+}
+
+.overlay-mosaico {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.123); /* fundo escuro fixo */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* alinha os itens no topo */
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+  opacity: 1; /* visível sempre */
+}
+
+
+
+.mosaico-item-metodo:hover .overlay-mosaico {
+  opacity: 1;
+}
+
+.overlay-mosaico h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  background-color: #102D07;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  height: 50px; /* força altura igual para todos os h3 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-mosaico p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #cccccc;
+  min-height: 100px; /* ajusta conforme o conteúdo médio */
+}
+
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .mosaico-metodo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .mosaico-metodo {
+    grid-template-columns: 1fr;
+  }
+
+  .mosaico-item-metodo {
+    height: 450px;
+  }
+
+  .titulo-mosaico-metodo {
+    font-size: 2.5rem;
+  }
+
+  .overlay-mosaico h3 {
+    font-size: 1.2rem;
+  }
+
+  .overlay-mosaico p {
+    font-size: 0.85rem;
+  }
+  .mosaico-item-metodo:first-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  overflow: none;
+}
+
+.mosaico-item-metodo:last-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  overflow: none;
+}
+}
+
+.entrar-direita {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 1s ease;
+}
+
+.entrar-direita.animado {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.entrar-esquerda {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 1s ease;
+}
+
+.entrar-esquerda.animado {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.entrar-baixo {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease;
+}
+
+.entrar-baixo.animado {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 

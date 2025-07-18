@@ -127,7 +127,53 @@ descobrir os sabores especiais da capital pernambucana!
     </div>
   </section>
   
-  <section class="sessao-info-gastronomia">
+<section class="secao-mosaico-metodo">
+
+  <div class="mosaico-metodo entrar-esquerda">
+    <div class="mosaico-item-metodo" style="background-color: #E9852F;">
+      <div class="overlay-mosaico">
+        <h3>Objetivos:</h3>
+        <ul class="bloco-lista">
+        <li>- Promover a culinária recifense e seus principais pratos típicos;</li>
+        <li>- Valorizar a cultura e a identidade da cidade do Recife;</li>
+        <li>- Oferecer uma experiência gastronômica única e deliciosa para os visitantes.</li>
+      </ul>
+      </div>
+    </div>
+    <div class="mosaico-item-metodo" style="background-color: #F1902A;">
+      <div class="overlay-mosaico">
+        <h3>Atividades:</h3>
+        <ul class="bloco-lista">
+        <li>- Feira gastronômica com pratos típicos recifenses;</li>
+        <li>- Oficinas culinárias com chefs locais;</li>
+        <li>- Degustação de produtos locais e artesanato</li>
+      </ul>
+      </div>
+    </div>
+    <div class="mosaico-item-metodo" style="background-color: #E9852F;">
+      <div class="overlay-mosaico">
+        <h3>Público-Alvo:</h3>
+        <ul class="bloco-lista">
+        <li>- Amantes da gastronomia;</li>
+        <li>- Turistas e visitantes;</li>
+        <li>- Moradores da cidade do Recife.</li>
+      </ul>
+      </div>
+    </div>
+    <div class="mosaico-item-metodo" style="background-color: #F1902A;">
+      <div class="overlay-mosaico">
+        <h3>Impactos:</h3>
+         <ul class="bloco-lista">
+        <li>- Valorização da cultura e da identidade local;</li>
+        <li>- Desenvolvimento econômico e turístico da região;</li>
+        <li>- Promoção da gastronomia recifense como um dos principais atrativos da cidade.</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+
+
+ <section class="sessao-info-gastronomia">
     <div class="container-info">
       <h3 class="bloco-titulo" style="color: #102D07;">Objetivos:</h3>
       <ul class="bloco-lista">
@@ -163,7 +209,7 @@ descobrir os sabores especiais da capital pernambucana!
         Venha descobrir os sabores especiais da capital pernambucana!
       </p>
     </div>
-  </section>
+  </section>-->
 </section>
 
 
@@ -566,6 +612,67 @@ que contempla os principais ritmos da música pernambucana.
   AOS.init();
 </script>
 <script src="menu.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const itens = document.querySelectorAll('.mosaico-item-metodo');
+
+    itens.forEach((item) => {
+      item.addEventListener('touchstart', function () {
+        // Remove a classe "ativo" de todos os itens
+        itens.forEach((el) => el.classList.remove('ativo'));
+
+        // Adiciona a classe "ativo" somente no item tocado
+        this.classList.add('ativo');
+      });
+    });
+
+    // Remove classe ativa ao tocar fora (opcional)
+    document.addEventListener('touchstart', function (e) {
+      const isTouchInside = e.target.closest('.mosaico-item-metodo');
+      if (!isTouchInside) {
+        itens.forEach((el) => el.classList.remove('ativo'));
+      }
+    });
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll('.mosaico-item-metodo');
+
+    // Só ativa em telas menores que 768px (mobile)
+    if (window.innerWidth <= 768) {
+      cards.forEach(card => {
+        card.addEventListener('click', () => {
+          // Remove "ativo" de todos os outros cards
+          cards.forEach(c => {
+            if (c !== card) c.classList.remove('ativo');
+          });
+
+          // Alterna a classe "ativo" no card clicado
+          card.classList.toggle('ativo');
+        });
+      });
+    }
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const animaveis = document.querySelectorAll('.entrar-direita, .entrar-esquerda, .entrar-baixo');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animado');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    animaveis.forEach(el => observer.observe(el));
+  });
+</script>
 
 
 </body>
