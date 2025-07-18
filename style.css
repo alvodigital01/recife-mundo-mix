@@ -743,6 +743,16 @@ border-bottom: 2px solid #73f759;
   }
 }
 
+.separador {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #102D07;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
 
 /* ------------------------------------
   FOOTER + animações auxiliares
