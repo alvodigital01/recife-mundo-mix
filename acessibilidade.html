@@ -55,57 +55,51 @@
   <div class="acessibilidade-container d-flex flex-column flex-md-row justify-content-between align-items-start">
 
     <div class="col-md-7">
-      <h2 class="fw-bold text-uppercase mb-0" id="TITLEE">
+      <h2 class="fw-bold text-uppercase mb-0 animate-right" id="TITLEE">
         No Recife Mundo Mix,
       </h2>
-      <h2 class="fw-bold text-uppercase mb-4 h2acessibilidade" >A CULTURA É PARA TODO MUNDO!</h2>
+      <h2 class="fw-bold text-uppercase mb-4 h2acessibilidade animate-left">A CULTURA É PARA TODO MUNDO!</h2>
 
       <div class="mb-4">
-        <p class="mb-1">
-          
+        <p class="mb-1 animate-right">
           <strong class="subtituloacesso">🌍 Acessibilidade é parte do nosso palco.</strong>
         </p>
-        <p>O festival foi pensado para ser um espaço inclusivo, seguro e acolhedor para todas as pessoas.</p>
+        <p class="animate-left">O festival foi pensado para ser um espaço inclusivo, seguro e acolhedor para todas as pessoas.</p>
       </div>
 
       <div class="mb-4">
-        <p class="mb-1">
-          
+        <p class="mb-1 animate-right">
           <strong class="subtituloacesso">♿ Infraestrutura acessível</strong>
         </p>
-        <p>Rampas de acesso, corrimãos, banheiros adaptados e áreas de descanso acessíveis fazem parte da nossa estrutura. Todo mundo merece curtir com conforto e autonomia.</p>
+        <p class="animate-left">Rampas de acesso, corrimãos, banheiros adaptados e áreas de descanso acessíveis fazem parte da nossa estrutura. Todo mundo merece curtir com conforto e autonomia.</p>
       </div>
 
       <div class="mb-4">
-        <p class="mb-1">
-          
+        <p class="mb-1 animate-right">
           <strong class="subtituloacesso">🗣️  Comunicação inclusiva</strong>
         </p>
-        <p>Durante os shows e transmissões, teremos a presença de intérpretes de Libras (Língua Brasileira de Sinais), garantindo que a emoção e a informação alcancem mais corações.</p>
+        <p class="animate-left">Durante os shows e transmissões, teremos a presença de intérpretes de Libras (Língua Brasileira de Sinais), garantindo que a emoção e a informação alcancem mais corações.</p>
       </div>
 
       <div class="mb-4">
-        <p class="mb-1">
+        <p class="mb-1 animate-right">
           <i class="bi bi-person-heart amarelo me-1"></i>
           <strong class="verde">Atendimento especializado</strong>
         </p>
-        <p>Contamos com uma equipe capacitada para oferecer acolhimento e suporte inclusivo. Se precisar de ajuda, estamos por perto!</p>
+        <p class="animate-left">Contamos com uma equipe capacitada para oferecer acolhimento e suporte inclusivo. Se precisar de ajuda, estamos por perto!</p>
       </div>
 
       <div>
-        <p class="mb-1">
+        <p class="mb-1 animate-right">
           <i class="bi bi-exclamation-circle-fill vermelho me-1"></i>
           <strong class="subtituloacesso">Sinalização para todos</strong>
         </p>
-        <p>Áreas reservadas para pessoas com deficiência estarão claramente sinalizadas, com ícones e mensagens que facilitam a orientação de todos os públicos.</p>
+        <p class="animate-left">Áreas reservadas para pessoas com deficiência estarão claramente sinalizadas, com ícones e mensagens que facilitam a orientação de todos os públicos.</p>
       </div>
     </div>
 
-    
-
   </div>
 </section>
-
 
   <!-- FOOTER -->
   <footer class="footer-custom text-white py-4" style="background-color: #1D3208;">
@@ -164,6 +158,32 @@
   AOS.init();
 </script>
 <script src="menu.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const animatedElements = document.querySelectorAll(".animate-left, .animate-right");
+
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1 // ativa quando 10% do elemento aparece
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show"); // permite reanimar ao voltar
+        }
+      });
+    }, observerOptions);
+
+    animatedElements.forEach(el => {
+      observer.observe(el);
+    });
+  });
+</script>
+
 
 
 </body>
