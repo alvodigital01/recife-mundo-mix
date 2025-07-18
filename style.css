@@ -390,7 +390,7 @@ border-bottom: 2px solid #73f759;
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: linear-gradient(90deg, #ffffff, #00fb33, #ffffff);
+  background: linear-gradient(80deg,  #00fb33, #ffffff, #00fb33,#ffffff, #00fb33);
   z-index: -1;
   border-radius: 10px;
   background-size: 200% 200%;
