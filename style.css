@@ -805,7 +805,7 @@ background-image: url('imagens/quadriculadoverde.png');
   color: #00FB33;
 }
 .datacontador{
-  color: #102D07;
+  color: white;
 }
 .evento-section {
  
@@ -817,7 +817,7 @@ background-image: url('imagens/quadriculadoverde.png');
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease;
-  margin-bottom: 27px;
+  margin-bottom: 20px;
 }
 
 .info-card:hover {
