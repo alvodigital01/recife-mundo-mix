@@ -18,9 +18,51 @@
       margin-bottom: 1.2rem;
     }
 
-    .container {
-      margin-left: 0 !important; /* Remove o deslocamento lateral */
-    }
+  .container {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
   }
 
+/* ANIMAÇÕES */
+    .animate-right {
+      opacity: 0;
+      transform: translateX(100px);
+      transition: all 1s ease;
+    }
 
+    .animate-left {
+      opacity: 0;
+      transform: translateX(-100px);
+      transition: all 1s ease;
+    }
+
+    .show {
+      opacity: 1 !important;
+      transform: translateX(0) !important;
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 768px) {
+      #hero h1 {
+        font-size: 2.5rem !important;
+        text-align: center !important;
+      }
+
+      #festival-text,
+      #festival-text2 {
+        font-size: 1rem !important;
+        padding: 0 20px;
+        text-align: justify !important;
+      }
+
+      #festival-text p,
+      #festival-text2 p {
+        margin-bottom: 1.2rem;
+      }
+
+      .container {
+        margin-left: 0 !important;
+      }
+    }
