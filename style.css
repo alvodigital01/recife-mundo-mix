@@ -1,6 +1,8 @@
 /* ------------------------------------
   GERAIS
 ------------------------------------- */
+
+
 /* Limitar largura do contador no desktop */
 @media (min-width: 768px) {
  #video{
@@ -820,6 +822,24 @@ background-image: url('imagens/quadriculadoverde.png');
 
 .info-card:hover {
   transform: translateY(-5px);
+}
+
+/* Ajuste fino para garantir responsividade do contador em mobile */
+@media (max-width: 767.98px) {
+  .custom-contador {
+    flex-direction: column !important;
+    gap: 1rem;
+  }
+
+  .grupo-superior,
+  .grupo-inferior {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .grupo-inferior {
+    margin-top: 0.5rem;
+  }
 }
 
 /* ------------------------------------
