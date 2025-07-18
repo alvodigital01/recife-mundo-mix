@@ -42,27 +42,3 @@
       });
     });
   });
-
-  // Bloquear clique com o botão direito
-  document.addEventListener('contextmenu', event => event.preventDefault());
-
-  // Bloquear atalhos comuns (Ctrl+U, Ctrl+Shift+I, F12, Ctrl+C, Ctrl+X)
-  document.addEventListener('keydown', function(e) {
-    // Ctrl+U
-    if (e.ctrlKey && e.key.toLowerCase() === 'u') {
-      e.preventDefault();
-    }
-
-    // Ctrl+Shift+I ou F12 (Inspecionar)
-    if ((e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i') || e.key === 'F12') {
-      e.preventDefault();
-    }
-
-    // Ctrl+C (copiar) ou Ctrl+X (recortar)
-    if (e.ctrlKey && ['c', 'x'].includes(e.key.toLowerCase())) {
-      e.preventDefault();
-    }
-  });
-
-  // Bloquear seleção de texto
-  document.addEventListener('selectstart', e => e.preventDefault());

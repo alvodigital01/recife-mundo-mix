@@ -726,6 +726,40 @@ criativa, com palestras, workshops e oportunidades de negócios e networking.</p
 </script>
 -->
 
+<script>
+  // Remove listeners adicionados anteriormente
+  function enableUserInteraction() {
+    // Remove contextmenu block
+    document.removeEventListener('contextmenu', blockRightClick);
+    document.oncontextmenu = null;
+    document.body.oncontextmenu = null;
+
+    // Remove selectstart block
+    document.removeEventListener('selectstart', blockTextSelect);
+    document.onselectstart = null;
+    document.body.onselectstart = null;
+
+    // Remove keydown bloqueios
+    document.removeEventListener('keydown', blockKeys, true);
+  }
+
+  // Funções antigas que podem ainda estar ativas
+  function blockRightClick(e) { e.preventDefault(); }
+  function blockTextSelect(e) { e.preventDefault(); }
+  function blockKeys(e) {
+    if (
+      (e.ctrlKey && ['u', 'c', 'x', 's'].includes(e.key.toLowerCase())) ||
+      (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i') ||
+      e.key === 'F12'
+    ) {
+      e.preventDefault();
+    }
+  }
+
+  // Remover no carregamento
+  window.addEventListener('DOMContentLoaded', enableUserInteraction);
+</script>
+
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
