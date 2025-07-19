@@ -68,7 +68,8 @@
     </div>
 
     <div class="hero-images mt-4 d-flex flex-wrap justify-content-center gap-3">
-      <img src="imagens/selos carbono (2).png" class="img-fluid img-hero" alt="Evento Neutro">
+      <img src="imagens/selos carbono (2).png" class="img-fluid img-hero selo-animado" alt="Evento Neutro">
+
       
   </div>
 </section>
@@ -117,10 +118,9 @@
         </p>
    
         <div class="selo-centro">
-          <img src="imagens/selos carbono (2).png" alt="Selo Evento Neutro">
-    
-        </div>
-      </div>
+  <img src="imagens/selos carbono (2).png" alt="Selo Evento Neutro" class="selo-animado">
+</div>
+
     </section>
     
     
@@ -206,6 +206,66 @@
 </script>
 
 <script src="menu.js"></script>
+<script>
+  // Detectar quando o h1 entra na tela
+  document.addEventListener("DOMContentLoaded", function () {
+    const h1 = document.querySelector(".hero-text-box h1");
+
+    function handleScroll() {
+      const rect = h1.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        h1.classList.add("animate-slide-in");
+        window.removeEventListener("scroll", handleScroll); // remove para não animar sempre
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // checar se já está visível ao carregar
+  });
+</script>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(
+      ".sessao-carbono .titulo-topo, .sessao-carbono .titulo-principal, .sessao-carbono p, .sessao-carbono ul, .sessao-carbono strong"
+    );
+
+    // Marcar todos inicialmente como ocultos
+    elements.forEach(el => el.classList.add("hidden-scroll"));
+
+    function isInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return rect.top < window.innerHeight - 100 && rect.bottom > 100;
+    }
+
+    function handleScrollAnimation() {
+      elements.forEach((el, i) => {
+        if (isInViewport(el)) {
+          el.classList.remove("hidden-scroll");
+
+          // Adiciona classe de animação apenas se não tiver ainda
+          if (!el.classList.contains("animate-left") && !el.classList.contains("animate-right")) {
+            if (el.classList.contains("titulo-topo") || el.classList.contains("titulo-principal")) {
+              el.classList.add("animate-left");
+            } else {
+              const animationClass = i % 2 === 0 ? "animate-left" : "animate-right";
+              el.classList.add(animationClass);
+            }
+          }
+        } else {
+          // Se sair da viewport, reseta tudo
+          el.classList.add("hidden-scroll");
+          el.classList.remove("animate-left", "animate-right");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", handleScrollAnimation);
+    handleScrollAnimation(); // Executa ao carregar a página
+  });
+</script>
 
 </body>
 </html>

@@ -723,5 +723,51 @@ descobrir os sabores especiais da capital pernambucana!
   });
 </script>
 
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const titulos = document.querySelectorAll("h1:not(.sem-animar), h2:not(.sem-animar), h3:not(.sem-animar)");
+    const textos = document.querySelectorAll("p:not(.sem-animar), span:not(.sem-animar), strong:not(.sem-animar), em:not(.sem-animar), a:not(.sem-animar)");
+
+    const elementos = [...titulos, ...textos];
+    const estadoAnima = new Map();
+
+    titulos.forEach(el => el.classList.add("animar-direita"));
+    textos.forEach(el => el.classList.add("animar-esquerda"));
+
+    function animarScroll() {
+      elementos.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        const visivel = rect.top < window.innerHeight * 0.85 && rect.bottom > 50;
+
+        if (visivel) {
+          if (!estadoAnima.get(el)) {
+            // Se é a primeira vez
+            el.classList.add("visivel-primeira");
+            estadoAnima.set(el, true);
+            setTimeout(() => {
+              el.classList.remove("visivel-primeira");
+              el.classList.add("visivel-retorno");
+            }, 700); // Tempo da animação rápida antes de virar lenta
+          }
+        } else {
+          el.classList.remove("visivel-primeira", "visivel-retorno");
+          estadoAnima.set(el, false);
+        }
+      });
+    }
+
+    window.addEventListener("scroll", animarScroll);
+    animarScroll();
+  });
+</script>
+
+
+
+
+
+
+
 </body>
 </html>

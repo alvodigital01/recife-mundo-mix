@@ -165,30 +165,24 @@
 <script src="menu.js"></script>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const animatedElements = document.querySelectorAll(
-      ".animate-left, .animate-right, .animate-up"
-    );
+  document.addEventListener("DOMContentLoaded", () => {
+    const elementosAnimados = document.querySelectorAll(".animate-left, .animate-right, .animate-up");
 
-    const observerOptions = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+    const observer = new IntersectionObserver((entradas) => {
+      entradas.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
         } else {
           entry.target.classList.remove("show");
         }
       });
-    }, observerOptions);
-
-    animatedElements.forEach(el => {
-      observer.observe(el);
+    }, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1,
     });
+
+    elementosAnimados.forEach(el => observer.observe(el));
   });
 </script>
 
