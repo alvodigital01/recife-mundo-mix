@@ -22,7 +22,8 @@
   font-weight: 500;
   line-height: 1.3;
   color: #0f340a;
-  margin-top: 2px; /* Posição do título */
+  margin-top: 2px; 
+  text-shadow: 2px 2px #ffffff;/* Posição do título */
 }
 
 .container-topo h1 strong {
@@ -83,10 +84,46 @@
   }
 }
 
+.animar-titulo {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.6s ease;
+}
+
+.mostrar-titulo {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 
 
 
+/* Ajustes já aplicados ao .topo-hero e .container-topo h1 em resoluções menores */
+
+@media (max-width: 768px) {
+  .topo-hero {
+    height: 100vh; /* Ocupa 100% da altura no mobile */
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 15px;
+    text-shadow: 2px 2px #ffffff;
+  }
+
+  .container-topo h1 {
+    font-size: 3rem;
+    line-height: 1.4;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-topo h1 {
+    font-size: 3rem;
+  }
+}
 
 
 

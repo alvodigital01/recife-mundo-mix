@@ -50,12 +50,12 @@
     </ul>
   </div>
 </nav>
-  
 <section class="topo-hero">
   <div class="container-topo">
-    <h1><strong>RECIFE É <span class="mix">MIX</span></strong><strong> E A CULTURA<br><em>É A NOSSA LÍNGUA.</strong></em></h1>
+    <h1 class="animar-titulo"><strong>RECIFE É <span class="mix">MIX</span></strong><strong> E A CULTURA<br><em>É A NOSSA LÍNGUA.</strong></em></h1>
   </div>
 </section>
+
 
 
 
@@ -703,6 +703,25 @@ descobrir os sabores especiais da capital pernambucana!
   });
 </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const tituloAnimado = document.querySelector('.animar-titulo');
+
+    function animarScrollTitulo() {
+      const posicao = tituloAnimado.getBoundingClientRect().top;
+      const alturaTela = window.innerHeight * 0.9;
+
+      if (posicao < alturaTela) {
+        tituloAnimado.classList.add('mostrar-titulo');
+      } else {
+        tituloAnimado.classList.remove('mostrar-titulo'); // Remove se rolar pra cima
+      }
+    }
+
+    window.addEventListener('scroll', animarScrollTitulo);
+    animarScrollTitulo(); // Executa ao carregar
+  });
+</script>
 
 </body>
 </html>
