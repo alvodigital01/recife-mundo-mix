@@ -68,3 +68,20 @@
         margin-left: 0 !important;
       }
     }
+
+    .animate-right,
+.animate-left {
+  will-change: transform, opacity;
+}
+
+.animar-cascata {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.4s ease; /* ⚡ animação mais rápida */
+    will-change: transform, opacity;
+  }
+
+  .mostrar {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }

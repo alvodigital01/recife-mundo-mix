@@ -1,21 +1,23 @@
+  document.addEventListener("DOMContentLoaded", function () {
+    const elementosCascata = document.querySelectorAll(".animar-cascata");
 
-   document.addEventListener("DOMContentLoaded", function () {
-      const animatedElements = document.querySelectorAll(".animate-left, .animate-right");
+    function animarScrollCascata() {
+      let delay = 0;
+      elementosCascata.forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        const alturaJanela = window.innerHeight * 0.9;
 
-      function handleScroll() {
-        animatedElements.forEach(el => {
-          const rect = el.getBoundingClientRect();
-          const triggerBottom = window.innerHeight * 0.9;
-          const triggerTop = 0;
+        if (rect.top < alturaJanela && rect.bottom > 0) {
+          setTimeout(() => {
+            el.classList.add("mostrar");
+          }, delay);
+          delay += 80; // ⏱️ Mais rápido
+        } else {
+          el.classList.remove("mostrar"); // 👈 remove animação se sair da tela
+        }
+      });
+    }
 
-          if (rect.top < triggerBottom && rect.bottom > triggerTop) {
-            el.classList.add("show");
-          } else {
-            el.classList.remove("show");
-          }
-        });
-      }
-
-      window.addEventListener("scroll", handleScroll);
-      handleScroll(); // Executa ao carregar
-    });
+    window.addEventListener("scroll", animarScrollCascata);
+    animarScrollCascata();
+  });
