@@ -1,7 +1,7 @@
 /* ===== MOBILE: até 768px ===== */
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 2.5rem !important;
+    font-size: rem !important;
     text-align: left !important;   /* 🔧 Corrigido: agora fica à esquerda */
     line-height: 1.2;
   }
@@ -16,6 +16,11 @@
   #festival-text p,
   #festival-text2 p {
     margin-bottom: 1.2rem;
+  }
+ .ofestivaltitlle{
+font-size: 3rem !important;
+    text-align: left !important;   /* 🔧 Corrigido: agora fica à esquerda */
+    line-height: 1.2;
   }
 
   .container {

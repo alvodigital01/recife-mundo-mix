@@ -1059,10 +1059,11 @@ background-image: url('imagens/quadriculadoverde.png');
 }
 
 .footer-logo-extra1 {
-  max-height: 170px;
+  max-height: 180px;
   height: auto;
   width: auto;
   padding: 0;
+  margin-left: -100px;
 }
 /* Esconde elementos específicos por padrão */
 .mobile-only {
@@ -1099,6 +1100,7 @@ background-image: url('imagens/quadriculadoverde.png');
   .mobile-only {
     display: block;
   }
+
 
   .copyright-text {
     font-size: 0.8rem;
