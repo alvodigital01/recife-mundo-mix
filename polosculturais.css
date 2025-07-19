@@ -879,11 +879,13 @@ body {
 
 
 
-
+.bgempreender{
+   background-image: url('imagens/bg\ empreendedoristmo.png');
+}
 
 
 .empreender-section {
-      background-image: url('imagens/bg\ empreendedoristmo.png');
+     
       color: white;
       padding: 80px 20px;
       position: relative;
@@ -1032,10 +1034,12 @@ body {
 
 
 
-
+.bgacoesecidadania{
+   background-image: url('imagens/bemvivier.png');
+}
 
 .secao-bemviver {
-  background-image: url('imagens/bemvivier.png');
+
   padding: 43px 20px;
   color: #ffffff;
 }
