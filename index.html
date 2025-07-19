@@ -60,18 +60,21 @@
   </section>
   
   
-   <section class="festival-section">
+     <section class="festival-section"> 
   <div class="festival-content">
     <h2>
-      <span style="color: #77F65B;" class="ofestivalt">O FESTIVAL</span><br>
-      <span class="mais">MAIS</span>
-      <span class="cultural">CULTURAL</span><br>
-      <span class="nordeste">DO NORDESTE.</span>
+      <span class="ofestivalt animate-right" data-delay="0">O FESTIVAL</span><br>
+      <span class="mais animate-right" data-delay="100">MAIS</span>
+      <span class="cultural animate-right" data-delay="200">CULTURA</span><br>
+      <span class="nordeste animate-right" data-delay="300">DO NORDESTE.</span>
     </h2>
     <p class="data">
-      <span class="dia">25</span><span class="a">A</span><span class="dia">28</span><span class="de" style="color: #77F65B;"> DE</span><br>
-      <span class="mes">SETEMBRO</span>
-      <span class="ano">DE 2025.</span>
+      <span class="dia animate-left" data-delay="0">25</span>
+      <span class="a animate-left" data-delay="100">A</span>
+      <span class="dia animate-left" data-delay="200">28</span>
+      <span class="de animate-left" data-delay="300"> DE</span><br>
+      <span class="mes animate-left" data-delay="400">SETEMBRO</span>
+      <span class="ano animate-left" data-delay="500">DE 2025.</span>
     </p>
   </div>
 </section>
@@ -217,27 +220,7 @@ Marque na agenda e volte sempre pra não perder nada! 😉
   </div>
   
   
-      <div class="overlay py-5 position-relative" style="z-index: 1;">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-10" data-aos="fade-up">
-            <div class="glass-card p-4">
-              <h2 class="text-center fw-bold mb-4">
-                <strong style="color: #00FB33; font-size: 3.3rem;">UM MOVIMENTO. UM TERRITÓRIO. <br> UM CONVITE À CRIAÇÃO COLETIVA.</strong>
-              </h2>
-              <p class="lead text-center">
-               <span style="font-size: 1.4rem; font-weight: 700;">Recife Mundo Mix</span> é um festival gratuito que mistura cultura, conhecimento e
-empreendedorismo nas ruas do Recife Antigo. A proposta é promover conexões e
-experiências para todos os públicos, com uma programação diversa que inclui
-shows, oficinas, debates, workshops e apresentações artísticas, unindo tradição e
-modernidade pernambucana.
-              </p>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
   
   
     <!-- Aftermovie 2025 -->
@@ -631,6 +614,38 @@ criativa, com palestras, workshops e oportunidades de negócios e networking.</p
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script>
   AOS.init();
+</script>
+
+
+
+<script>
+  const animateElements = document.querySelectorAll('.animate-left, .animate-right');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const el = entry.target;
+      const delay = el.dataset.delay || 0;
+
+      if (entry.isIntersecting) {
+        el.classList.remove('reset-animation');
+        el.style.animationDelay = `${delay}ms`;
+        el.style.animationPlayState = 'running';
+      } else {
+        // Reset da animação ao sair da tela
+        el.classList.add('reset-animation');
+        el.style.animation = 'none';
+        void el.offsetWidth; // Trigger reflow
+        el.style.animation = '';
+        el.style.animationDelay = `${delay}ms`;
+        el.style.animationPlayState = 'paused';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  animateElements.forEach(el => {
+    el.style.animationPlayState = 'paused';
+    observer.observe(el);
+  });
 </script>
 
 <!-- JS ANIMAÇÕES DEPOIMENTOS / BALANÇO (caso queira reutilizar) -->

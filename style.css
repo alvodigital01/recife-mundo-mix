@@ -152,6 +152,64 @@ html {
   }
 }
 
+/* ====== Animações ====== */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-right {
+  opacity: 0;
+  animation: slideInRight 1s forwards;
+}
+
+.animate-left {
+  opacity: 0;
+  animation: slideInLeft 1s forwards;
+}
+
+/* reset */
+.reset-animation {
+  animation: none !important;
+}
+
+/* ====== Responsivo melhorado ====== */
+@media (max-width: 768px) {
+  .festival-content h2 {
+    font-size: 3rem;
+  }
+
+  .festival-content .data {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .festival-content h2 {
+    font-size: 2.4rem;
+  }
+
+  .festival-content .data {
+    font-size: 2.4rem;
+  }
+}
 
 /* NAVBAR */
 .custom-navbar {
