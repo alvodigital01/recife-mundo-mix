@@ -570,6 +570,21 @@ body {
   }
 }
 
+.logo-sabores {
+  margin-left: -15px;   /* alinhamento no desktop */
+    /* evita ultrapassar tela */
+  height: auto;         /* mantém proporção */
+  display: block;
+}
+
+/* Corrige no mobile */
+@media (max-width: 768px) {
+  .logo-sabores {
+    margin-left: 0;
+    margin-right: auto;
+    display: block;
+  }
+}
 
 
 
@@ -756,6 +771,7 @@ padding: 10px 12px;
 
   .logo-feirarte {
     width: 250px;
+    
   }
 }
 
@@ -769,12 +785,27 @@ padding: 10px 12px;
   }
 
   .texto {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
   #brarte{
     display: none;
   }
 }
+.logo-feirarte {
+  margin-left: -24px; /* Desktop */
+  max-width: 100%;    /* Evita ultrapassar tela */
+}
+
+/* Corrige no mobile */
+@media (max-width: 768px) {
+  .logo-feirarte {
+    margin-left: 0;    /* Zera o recuo */
+    display: block;
+    margin-right: auto;
+    margin-left: auto; /* Centraliza se quiser */
+  }
+}
+
 
 
 
@@ -952,6 +983,21 @@ padding: 10px 12px;
     }
 
 
+.logo-empreender {
+  margin-left: -154px;  /* alinhamento desktop */
+
+  height: auto;         /* mantém a proporção */
+  display: block;
+}
+
+/* Corrige no mobile */
+@media (max-width: 768px) {
+  .logo-empreender {
+    margin-left: 0;
+    margin-right: auto;
+    display: block;
+  }
+}
 
 
 
@@ -1098,6 +1144,21 @@ padding: 10px 12px;
 }
 
 
+.logo-bemviver {
+  margin-left: -165px;   /* Alinhamento desktop */
+     /* Não ultrapassa a tela no mobile */
+  height: auto;
+  display: block;
+}
+
+/* Mobile: corrige o bug de ultrapassar a tela */
+@media (max-width: 768px) {
+  .logo-bemviver {
+    margin-left: 0;
+    margin-right: auto;
+    display: block;
+  }
+}
 
 
 
@@ -1260,6 +1321,20 @@ background-image: url('imagens/bg\ mundo\ mix.png');
   }
 }
 
+.logo-polo {
+  margin-left: -144px;  /* Alinhamento no desktop */
+
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .logo-polo {
+    margin-left: 0;
+    margin-right: auto;
+    display: block;
+  }
+}
 
 
 
