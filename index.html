@@ -79,150 +79,92 @@
   </div>
 </section>
 
-    <section id="contador" class="contador-section container-fluid px-2">
+<!-- HTML COM ANIMAÇÃO EM ROLAGEM NORMAL (SEM CASCATA NOS CARDS) -->
+<section id="contador" class="contador-section container-fluid px-2">
+  <section class="bgcontador">
+    <div class="overlay">
+      <br><br>
+      <h2 class="text-center fw-bold mb-4 animate-right" data-delay="0" style="color: #00FB33; font-size: 3.3rem;">FALTAM</h2>
 
-  
-  
-   
+      <div class="contador-glass p-4 d-flex justify-content-center align-items-center flex-wrap gap-3 flex-md-row flex-column custom-contador animate-top" data-delay="100">
+        <!-- Grupo superior -->
+        <div class="grupo grupo-superior d-flex gap-3 align-items-center">
+          <div class="tempo">
+            <span id="dias">00</span>
+            <p>DIAS</p>
+          </div>
+          <div class="separador">:</div>
+          <div class="tempo">
+            <span id="horas">00</span>
+            <p>HORAS</p>
+          </div>
+        </div>
 
-  
-    <section class="bgcontador">
-      <div class="overlay">
-        <br><br>
-      <h2 class="text-center fw-bold mb-4" style="color: #00FB33; font-size: 3.3rem;">FALTAM</h2>
-      <div class="contador-glass p-4 d-flex justify-content-center align-items-center flex-wrap gap-3 flex-md-row flex-column custom-contador">
-  <!-- Grupo superior -->
-  <div class="grupo grupo-superior d-flex gap-3 align-items-center">
-    <div class="tempo">
-      <span id="dias">00</span>
-      <p>DIAS</p>
-    </div>
-    <div class="separador">:</div>
-    <div class="tempo">
-      <span id="horas">00</span>
-      <p>HORAS</p>
-    </div>
-  </div>
+        <!-- Grupo inferior -->
+        <div class="grupo grupo-inferior d-flex gap-3 align-items-center mt-3 mt-md-0">
+          <div class="tempo">
+            <span id="minutos">00</span>
+            <p>MINUTOS</p>
+          </div>
+          <div class="separador">:</div>
+          <div class="tempo">
+            <span id="segundos">00</span>
+            <p>SEGUNDOS</p>
+          </div>
+        </div>
+      </div>
 
-  <!-- Grupo inferior (mobile apenas) -->
-  <div class="grupo grupo-inferior d-flex gap-3 align-items-center mt-3 mt-md-0">
-    <div class="tempo">
-      <span id="minutos">00</span>
-      <p>MINUTOS</p>
-    </div>
-    <div class="separador">:</div>
-    <div class="tempo">
-      <span id="segundos">00</span>
-      <p>SEGUNDOS</p>
-    </div>
-  </div>
-</div>
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <br>
-      
-      
-      
       <!-- SEÇÃO: Chegada do Evento -->
       <section class="evento-section text-white py-5">
         <div class="container">
-      <div class="row align-items-center">
-      
-        <!-- Texto Principal -->
-        <div class="col-md-7 mb-4">
-          <h6 class="fw-bold text-uppercase text-light" style="letter-spacing: 12px;">AGUARDE!!!</h6>
-          <h1 class="display-4 titulocontador fw-bold mb-4">FIQUE DE OLHO NA PROGRAMAÇÃO!<br>AGENDA EM CONSTANTE MOVIMENTO</h1>
-          <p class="lead">O Recife Mundo Mix é vivo, pulsante e sempre em transformação.
-Aqui você acompanha tudo que vai rolar no festival: shows, oficinas, talks, encontros criativos, exposições, ativações e muito mais!
-</p>
-        </div>
-        <!-- Cards com Infos -->
-        <div class="col-md-5">
-          <div class="info-card mb-3 p-3 rounded">
-            <div class="d-flex align-items-center gap-3">
-              <i class="bi bi-calendar-event-fill fs-2 text-uppercase"></i>
-              <div>
-                <h6 class="text-uppercase  mb-1 fw-bold">DATA</h6>
-                <p class="mb-0 datacontador fw-semibold">25–28 de SETEMBRO, 2025</p>
-                <small class="text-white-50">Horário em breve</small>
+          <div class="row align-items-center">
+            <!-- Texto Principal -->
+            <div class="col-md-7 mb-4">
+              <h6 class="fw-bold text-uppercase text-light animate-left" data-delay="200" style="letter-spacing: 12px;">AGUARDE!!!</h6>
+              <h1 class="display-4 titulocontador fw-bold mb-4 animate-right" data-delay="300">FIQUE DE OLHO NA PROGRAMAÇÃO!<br>AGENDA EM CONSTANTE MOVIMENTO</h1>
+              <p class="lead animate-left" data-delay="400">O Recife Mundo Mix é vivo, pulsante e sempre em transformação. Aqui você acompanha tudo que vai rolar no festival: shows, oficinas, talks, encontros criativos, exposições, ativações e muito mais!</p>
+            </div>
+
+            <!-- Cards com Infos -->
+            <div class="col-md-5">
+              <div class="info-card mb-3 p-3 rounded animate-fade">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-calendar-event-fill fs-2 text-uppercase"></i>
+                  <div>
+                    <h6 class="text-uppercase mb-1 fw-bold">DATA</h6>
+                    <p class="mb-0 datacontador fw-semibold">25–28 de SETEMBRO, 2025</p>
+                    <small class="text-white-50">Horário em breve</small>
+                  </div>
+                </div>
               </div>
+              <div class="info-card mb-3 p-3 rounded animate-fade">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-buildings-fill fs-2 text-uppercase"></i>
+                  <div>
+                    <h6 class="text-uppercase mb-1 fw-bold">LOCAL 1</h6>
+                    <p class="mb-0 fw-semibold datacontador">Praça do Arsenal da Marinha</p>
+                    <small class="text-white-50">Recife Antigo</small>
+                  </div>
+                </div>
+              </div>
+              <div class="info-card p-3 rounded animate-fade">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-buildings-fill fs-2 text-uppercase"></i>
+                  <div>
+                    <h6 class="text-uppercase mb-1 fw-bold">LOCAL 2</h6>
+                    <p class="mb-0 fw-semibold datacontador">Museu Cais do Sertão</p>
+                    <small class="text-white-50">Recife Antigo</small>
+                  </div>
+                </div>
+              </div>
+              <p class="lead animate-fade" style="color: #00F747;">Esta página será atualizada ao longo dos dias com todas as novidades da programação. Marque na agenda e volte sempre pra não perder nada! 😉</p>
             </div>
           </div>
-          <div class="info-card mb-3 p-3 rounded">
-            <div class="d-flex align-items-center gap-3">
-              <i class="bi bi-buildings-fill fs-2 text-uppercase"></i>
-              <div>
-                <h6 class="text-uppercase  mb-1 fw-bold">LOCAL 1</h6>
-                <p class="mb-0 fw-semibold datacontador">Praça do Arsenal da Marinha</p>
-                <small class="text-white-50">Recife Antigo</small>
-              </div>
-            </div>
-          </div>
-          <div class="info-card p-3 rounded">
-            <div class="d-flex align-items-center gap-3">
-              <i class="bi bi-buildings-fill fs-2 text-uppercase"></i>
-              <div>
-                <h6 class="text-uppercase  mb-1 fw-bold">LOCAL 2</h6>
-                <p class="mb-0  fw-semibold datacontador">Museu Cais do Sertão</p>
-                <small class="text-white-50">Recife Antigo</small>
-              </div>
-              
-            </div>
-            
-          </div>
-           <p class="lead" style="color: #00F747;">Esta página será atualizada ao longo dos dias com todas as novidades da programação.
-Marque na agenda e volte sempre pra não perder nada! 😉
-</p>
-        </div>
-      </div>
         </div>
       </section>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-      <!-- Grupo inferior (aparece apenas no mobile) -->
-      <div class="grupo grupo-inferior d-flex gap-3 mt-md-0 mt-3">
-        <div class="tempo">
-          <span id="minutos">00</span>
-          <p>MINUTOS</p>
-        </div>
-        <div class="tempo">
-          <span id="segundos">00</span>
-          <p>SEGUNDOS</p>
-        </div>
-      </div>
     </div>
-  </div>
-  
-  
-
-  
-  
+  </section>
+</section>
     <!-- Aftermovie 2025 -->
   <div class="container py-5" data-aos="fade-up"  id="video">
     <h2 class="text-center fw-bold mb-4" style="color: #00FB33; font-size: 3.3rem;">
@@ -380,9 +322,10 @@ criativa, com palestras, workshops e oportunidades de negócios e networking.</p
   
     <div class="overlay">
       <div class="container">
-        <h2 class="fw-bold mb-4" data-aos="fade-up" data-aos-delay="100" style="color: #00FB33; font-size: 3.3rem;">
-          PROJEÇÕES PARA 2025
-        </h2>
+     <h2 class="fw-bold tituloproje mb-4" data-aos="fade-up" data-aos-delay="100" style="color: #00FB33; font-size: 3.3rem;">
+ PROJEÇÕES PARA 2025
+</h2>
+          
   
         <div class="row text-center g-4">
           <!-- Público -->
@@ -447,11 +390,11 @@ criativa, com palestras, workshops e oportunidades de negócios e networking.</p
   <section id="localizacao" class="container-fluid px-2 depoimentos-section">
   
   <div class="overlay">
-    <h2 class="text-center fw-bold mb-4" data-aos="fade-up" style="color: #00FB33; font-size: 3.3rem;">
-      RECIFE ANTIGO, O CORAÇÃO DE RECIFE. <br>
-      <strong style="color: #FF2E94;">É aqui que pulsa a batida do Recife Mundo Mix!</strong>
-    </h2>
-
+  <h2 class="text-center fw-bold mb-4 overlay-title" data-aos="fade-up" style="color: #00FB33;">
+    RECIFE ANTIGO,<br class="brok"> O CORAÇÃO DE RECIFE. <br>
+    <strong class="highlight-text">É aqui que pulsa a batida do Recife Mundo Mix!</strong>
+  </h2>
+</div>
     
     <div class="depoimentos">
       <div class="depoimento" style="padding: 0; overflow: hidden;">
@@ -473,64 +416,7 @@ criativa, com palestras, workshops e oportunidades de negócios e networking.</p
   
   
   
-    <!-- PRA QUEM É 
-  
-  <section id="para-quem-e" class="container-fluid px-2
-  eixos-section position-relative overflow-hidden">
-  
    
-  
-   
-    <div class="overlay position-relative" style="z-index: 1;">
-      <h2 class="text-center fw-bold mb-4" data-aos="fade-up" style="color: #00FB33; font-size: 3.3rem;">PARA QUEM É?</h2>
-      <h4 class="text-center fw-bold mb-5" data-aos="fade-up" style="color:#FF2E94 ; font-size:2rem;">O Recife Mundo Mix é para quem:</h4>
-      
-  
-      <div class="container">
-        <div class="row g-4 justify-content-center">
-           
-          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="glass-card h-100 text-center p-4">
-              <i class="bi bi-palette-fill display-4 text-warning mb-3"></i>
-              <h5 class="fw-bold">Cria, empreende e transforma com arte.</h5>
-            </div>
-          </div>
-  
-          
-          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="glass-card h-100 text-center p-4">
-              <i class="bi bi-people-fill display-4 text-info mb-3"></i>
-              <h5 class="fw-bold">Acredita na potência da coletividade.</h5>
-            </div>
-          </div>
-  
-          
-          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="glass-card h-100 text-center p-4">
-              <i class="bi bi-tree-fill display-4 text-success mb-3"></i>
-              <h5 class="fw-bold">Valoriza as raízes e abraça o novo.</h5>
-            </div>
-          </div>
-  
-          
-          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="glass-card h-100 text-center p-4">
-              <i class="bi bi-fire display-4 text-danger mb-3"></i>
-              <h5 class="fw-bold">Quer viver experiências reais, autênticas e intensas.</h5>
-            </div>
-          </div>
-  
-          
-          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="glass-card h-100 text-center p-4">
-              <i class="bi bi-lightning-fill display-4 text-primary mb-3"></i>
-              <h5 class="fw-bold">Busca estar onde as coisas acontecem primeiro.</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </section> -->
   
   
   <!-- SEÇÃO: QUER PARTICIPAR -->
@@ -648,25 +534,49 @@ criativa, com palestras, workshops e oportunidades de negócios e networking.</p
   });
 </script>
 
-<!-- JS ANIMAÇÕES DEPOIMENTOS / BALANÇO (caso queira reutilizar) -->
-<script>
-  gsap.from(".depoimento-card", {
-    duration: 1.2,
-    y: 100,
-    opacity: 0,
-    stagger: 0.3,
-    ease: "back.out(1.7)"
-  });
 
-  gsap.to(".depoimento-card", {
-    y: "+=10",
-    repeat: -1,
-    yoyo: true,
-    ease: "sine.inOut",
-    duration: 2,
-    stagger: 0.2
-  });
+
+</section>
+
+<script>
+  const elementsContador = document.querySelectorAll(
+  '.animate-left, .animate-right, .animate-top, .animate-bottom, .animate-up, .animate-fade'
+);
+
+
+  const observerContador = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const el = entry.target;
+      const delay = el.dataset.delay || 0;
+
+      if (entry.isIntersecting) {
+        el.classList.remove('reset-animation');
+        el.style.animation =
+  (el.classList.contains('animate-left')
+    ? 'slideInLeft'
+    : el.classList.contains('animate-right')
+    ? 'slideInRight'
+    : el.classList.contains('animate-top')
+    ? 'slideInTop'
+    : el.classList.contains('animate-up')
+    ? 'slideInUp'
+    : el.classList.contains('animate-fade')
+    ? 'fadeInUp'
+    : 'slideInBottom') + ' 0.8s ease-out forwards';
+
+        el.style.animationDelay = `${delay}ms`;
+      } else {
+        el.classList.add('reset-animation');
+        el.style.animation = 'none';
+        void el.offsetWidth;
+        el.style.animation = '';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  elementsContador.forEach((el) => observerContador.observe(el));
 </script>
+
 
 <!-- CONTADOR -->
 <script>

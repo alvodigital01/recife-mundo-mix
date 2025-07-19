@@ -626,6 +626,33 @@ border-bottom: 2px solid #73f759;
   z-index: 1;
 }
 
+.brok{
+  display: none;
+}
+  @media (max-width: 768px) {
+    .tituloproje {
+      font-size: 2.5rem !important;
+    }
+    .brok{
+  display:flex;
+}
+  }
+
+    .overlay-title {
+    font-size: 3.3rem;
+    /* a cor verde já está inline, se quiser pode tirar dali e colocar aqui */
+  }
+
+  .highlight-text {
+    color: #FF2E94;
+  }
+
+  @media (max-width: 768px) {
+    .overlay-title {
+      font-size: 2.5rem;
+    }
+  }
+
 .overlay {
   position: relative;
   z-index: 2;
@@ -941,6 +968,49 @@ background-image: url('imagens/quadriculadoverde.png');
     margin-top: 0.5rem;
   }
 }
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-100px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(100px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInTop {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideInBottom {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(100px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.reset-animation {
+  animation: none !important;
+}
+
+/* Responsividade aprimorada */
+@media (max-width: 767.98px) {
+  .titulocontador {
+    font-size: 2rem !important;
+  }
+  .evento-section p.lead,
+  .evento-section h6 {
+    font-size: 1.1rem !important;
+  }
+  .evento-section h1 {
+    font-size: 2.1rem !important;
+  }
+  h2.text-center {
+    font-size: 2.4rem !important;
+  }
+}
+
+
 
 /* ------------------------------------
   FOOTER + animações auxiliares
