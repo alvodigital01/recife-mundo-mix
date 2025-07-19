@@ -1195,7 +1195,7 @@ body {
 
 
 .secao-polo-musical {
- /* Substitua pelo seu arquivo */
+background-image: url('imagens/bg\ mundo\ mix.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
