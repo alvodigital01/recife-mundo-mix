@@ -69,11 +69,11 @@
       <span class="nordeste animate-right" data-delay="300">DO NORDESTE.</span>
     </h2>
     <p class="data">
-      <span class="dia animate-left" data-delay="0">25</span>
+      <span class="dia animate-left" data-delay="0">20</span>
       <span class="a animate-left" data-delay="100">A</span>
-      <span class="dia animate-left" data-delay="200">28</span>
+      <span class="dia animate-left" data-delay="200">23</span>
       <span class="de animate-left" data-delay="300"> DE</span><br>
-      <span class="mes animate-left" data-delay="400">SETEMBRO</span>
+      <span class="mes animate-left" data-delay="400">NOVEMBRO</span>
       <span class="ano animate-left" data-delay="500">DE 2025.</span>
     </p>
   </div>
@@ -132,7 +132,7 @@
                   <i class="bi bi-calendar-event-fill fs-2 text-uppercase"></i>
                   <div>
                     <h6 class="text-uppercase mb-1 fw-bold">DATA</h6>
-                    <p class="mb-0 datacontador fw-semibold">25–28 de SETEMBRO, 2025</p>
+                    <p class="mb-0 datacontador fw-semibold">20-23 de NOVEMBRO, 2025</p>
                     <small class="text-white-50">Horário: À definir</small>
                   </div>
                 </div>
@@ -704,7 +704,14 @@ criativa, com palestras, workshops e oportunidades de negócios e networking.</p
 
 
 <script>
-  const dataAlvo = new Date("2025-09-25T00:00:00").getTime();
+  // Define 20 de novembro do ano atual (ou do próximo ano se já tiver passado)
+  const hoje = new Date();
+  const anoAtual = hoje.getFullYear();
+  let dataAlvoDate = new Date(anoAtual, 10, 20, 0, 0, 0); // mês 10 = novembro
+  if (hoje > dataAlvoDate) {
+    dataAlvoDate = new Date(anoAtual + 1, 10, 20, 0, 0, 0);
+  }
+  const dataAlvo = dataAlvoDate.getTime();
 
   const atualizarContador = setInterval(() => {
     const agora = new Date().getTime();
@@ -730,6 +737,7 @@ criativa, com palestras, workshops e oportunidades de negócios e networking.</p
     document.getElementById("segundos").innerHTML = String(segundos).padStart(2, '0');
   }, 1000);
 </script>
+
 
 
 
