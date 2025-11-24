@@ -232,10 +232,10 @@ border-bottom: 2px solid #73f759;
 
 .menu-toggle {
   font-size: 1.6rem;
-  background-color: #102D07;
+  background-color: #73f759;
   border: none;
   border-radius: 4px;
-  color: white;
+  color: #102D07;
   cursor: pointer;
   padding: 0.2rem 0.4rem;
   position: fixed;
